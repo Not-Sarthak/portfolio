@@ -7,19 +7,12 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
-type Metadata = {
-  title: string;
-  publishedAt: string;
-  summary: string;
-  image?: string;
-};
-
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
 
 export async function markdownToHTML(markdown: string) {
-  const p = await unified()
+  const p = await unified() 
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
