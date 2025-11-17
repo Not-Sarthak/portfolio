@@ -118,6 +118,136 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
   openSource: [],
   projects: [
     {
+      "Full Stack": {
+        Predictify: {
+          id: 1,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/predictify",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "A Polymarket Telegram bot with 2.5k+ users and $100k+ in volume with features such as market alerts, copytrading, and spot trading.",
+        },
+        Hunch: {
+          id: 2,
+          links: [
+            {
+              type: "Website",
+              href: "https://www.hunchkaro.xyz/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/hunch-lens",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "A social trading platform connecting people who spot viral content early with those who want to profit from it. Create markets for viral posts, trade on insights, and earn from your predictions.",
+        },
+        Ticker: {
+          id: 3,
+          links: [
+            {
+              type: "Website",
+              href: "https://farcaster.xyz/~/mini-apps/launch?domain=ticker.megabyte0x.xyz",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/ticker",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description: "A Farcaster Mini-App to buy RWA Assets Onchain",
+        },
+        Vox: {
+          id: 4,
+          links: [
+            {
+              type: "Website",
+              href: "https://voxnow.xyz/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/vox",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "A Ticket-Reselling platform for events, that allows users to buy and sell tickets for events.",
+        },
+        Twinn: {
+          id: 5,
+          links: [
+            {
+              type: "Website",
+              href: "https://usetwinn.com/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/twinn",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "Bookmark your Life, with Twinn - A zk-compressed digital badge on Solana for every moment you showed up to.",
+        },
+      },
+      Backend: {
+        Curators: {
+          id: 1,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/curators",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "Curators Backend automates the process of identifying high-performing Liquid Staking Tokens (LSTs) on Solana and facilitates automatic swapping to optimize yield.",
+        },
+        "Ticket Booking CLI": {
+          id: 2,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/booking-app-cli",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description: "A simple CLI Ticket Booking App in GoLang",
+        },
+      },
+      "Smart Contracts": {
+        "Anchor Turbin3": {
+          id: 1,
+          description: "Minimal Solana Programs built during Turbin3 Builders' Cohort",
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/anchor-turbin3",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+        },
+        "Cyfrin EVM": {
+          id: 2,
+          description: "Lil Projects I Built while watching Cyfrin's Course",
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/cyfrin-evm",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+        },
+      },
       Frontend: {
         "Superteam Security Dashboard": {
           id: 1,
@@ -153,252 +283,30 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
           description:
             "A modern UI component library for Solana dApps, featuring customizable components native to Solana Ecosystem.",
         },
-        "SendAI Dashboard": {
+        "EthMumbai Logo Generator": {
           id: 3,
           links: [
             {
               type: "Website",
-              href: "https://sendai-dashboard.vercel.app/",
+              href: "https://mumbaieth.vercel.app/",
               icon: <LinkIcon className="size-9" />,
             },
             {
               type: "Source",
-              href: "https://github.com/Not-Sarthak/sendai-dashboard",
+              href: "https://github.com/Not-Sarthak/eth-mumbai",
               icon: <GithubIcon className="size-9" />,
             },
           ],
-          description:
-            "A comprehensive dashboard for SendAI, providing analytics and insights for projects built during Send AI Hackathon.",
-        },
-      },
-      Backend: {
-        Curators: {
-          id: 1,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/curators",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Curators Backend automates the process of identifying high-performing Liquid Staking Tokens (LSTs) on Solana and facilitates automatic swapping to optimize yield.",
-        },
-      },
-      "Full Stack": {
-        Hunch: {
-          id: 1,
-          links: [
-            {
-              type: "Website",
-              href: "https://www.hunchkaro.xyz/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/hunch-lens",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A social trading platform connecting people who spot viral content early with those who want to profit from it. Create markets for viral posts, trade on insights, and earn from your predictions.",
-        },
-        Ticker: {
-          id: 2,
-          links: [
-            {
-              type: "Website",
-              href: "https://farcaster.xyz/~/mini-apps/launch?domain=ticker.megabyte0x.xyz",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/ticker",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "A Farcaster Mini-App to buy RWA Assets Onchain",
-        },
-        Vox: {
-          id: 3,
-          links: [
-            {
-              type: "Website",
-              href: "https://voxnow.xyz/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/vox",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A Ticket-Reselling platform for events, that allows users to buy and sell tickets for events.",
-        },
-        Twinn: {
-          id: 4,
-          links: [
-            {
-              type: "Website",
-              href: "https://usetwinn.com/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/twinn",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Bookmark your Life, with Twinn - A zk-compressed digital badge on Solana for every moment you showed up.",
-        },
-        Ghiblub: {
-          id: 5,
-          links: [
-            {
-              type: "Website",
-              href: "https://ghiblub.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/ghiblub",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A community platform for Studio Ghibli fans, that helps them find out how closely they're connected to literally anyone on github.",
-        },
-        "Lulo Blinks": {
-          id: 6,
-          links: [
-            {
-              type: "Website",
-              href: "https://dial.to/developer?url=https://www.investorrr.club/api/donate&cluster=mainnet",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/lulo-blinks",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "Solana Blink to deposit funds directly to Lulo",
-        },
-      },
-      "Smart Contracts": {
-        Solana: {
-          "NFT Marketplace Program": {
-            id: 1,
-            description: "NFT Marketplace Program using Anchor",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/anchor-nft-marketplace",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "AMM Program": {
-            id: 2,
-            description:
-              "AMM Program using Anchor to understand the Constant Product Curve",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/amm-anchor",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "NFT Staking Program": {
-            id: 3,
-            description: "NFT Staking Program using Anchor",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/nft-stake-anchor",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "Vault Program": {
-            id: 4,
-            description: "Solana Vault Program using Anchor",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/vault-anchor",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "Escrow Program": {
-            id: 5,
-            description: "Solana Escrow Program using Anchor",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/escrow-anchor/",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-        },
-        EVM: {
-          "Foundry Stablecoin": {
-            id: 1,
-            description:
-              "This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD.",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/defi-stablecoin",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "Merkle Airdrop": {
-            id: 2,
-            description:
-              "An introduction to the Merkle Airdrop and Signatures project",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/merkle-airdrop",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "DAO - Foundry": {
-            id: 3,
-            description: "On-chain voting system for DAOs",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/foundry-dao",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
-          "ERC - 4337 / Foundry": {
-            id: 4,
-            description:
-              "A project to learn Account Abstraction using EIP-4337",
-            links: [
-              {
-                type: "Source",
-                href: "https://github.com/Not-Sarthak/foundry-account-abstraction",
-                icon: <GithubIcon className="size-9" />,
-              },
-            ],
-          },
+          description: "Eth-Mumbai Dynamic SVG Logo Generator for EthMumbai Bounty",
         },
       },
     },
   ],
   wins: {
+    "Colosseum Breakout Hackathon - 1x Bounty (Light Protocol)": {
+      link: "",
+      type: "hackathon",
+    },
     "Superteam Security Dashboard - 1st Place": {
       link: "",
       type: "hackathon",
@@ -419,31 +327,31 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       link: "",
       type: "title",
     },
-    "ETHIndia '24 - Bounty Winner": {
+    "ETHIndia '24 - 1x Bounty (Base)": {
       link: "",
       type: "hackathon",
     },
-    "Onchain AI Fellowship - by @callusfbi - Selected": {
+    "Onchain AI Fellowship - by @callusfbi": {
       link: "",
       type: "hackathon",
     },
-    "EthBangkok '24 - Bounty Winner": {
+    "EthBangkok '24 - 1x Bounty (Flow)": {
       link: "",
       type: "hackathon",
     },
-    "Encode Club BTC Hackathon - 2nd Place": {
+    "Encode Club BTC Hackathon - 2nd Place (Goat Network)": {
       link: "",
       type: "hackathon",
     },
-    "Funding the Commons '24 Bangkok - Bounty Winner": {
+    "Funding the Commons '24 Bangkok - 1x Bounty (Talent Protocol)": {
       link: "",
       type: "hackathon",
     },
-    "Based India '24 - Winner List": {
+    "Based India '24 - Winner": {
       link: "",
       type: "hackathon",
     },
-    "Colosseum Radar Hackathon - 2x Bounties": {
+    "Colosseum Radar Hackathon - 2x Bounty (Ore and Mercyuro)": {
       link: "",
       type: "hackathon",
     },

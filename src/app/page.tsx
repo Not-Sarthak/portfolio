@@ -26,10 +26,7 @@ type ProjectsData = {
   Frontend?: Record<string, Project>;
   Backend?: Record<string, Project>;
   "Full Stack"?: Record<string, Project>;
-  "Smart Contracts"?: {
-    Solana?: Record<string, Project>;
-    EVM?: Record<string, Project>;
-  };
+  "Smart Contracts"?: Record<string, Project>;
 };
 
 const BLUR_FADE_DELAY = 0.04;

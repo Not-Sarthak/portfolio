@@ -30,10 +30,7 @@ interface ProjectListProps {
     Frontend?: Record<string, Project>;
     Backend?: Record<string, Project>;
     "Full Stack"?: Record<string, Project>;
-    "Smart Contracts"?: {
-      Solana?: Record<string, Project>;
-      EVM?: Record<string, Project>;
-    };
+    "Smart Contracts"?: Record<string, Project>;
   };
 }
 
@@ -97,18 +94,15 @@ export function ProjectCard({
 }
 
 export function ProjectList({ projects }: ProjectListProps) {
-  const [activeParentTab, setActiveParentTab] = React.useState("Frontend");
+  const [activeParentTab, setActiveParentTab] = React.useState("Full Stack");
   const [activeChildTab, setActiveChildTab] = React.useState<string | null>(null);
   const [expanded, setExpanded] = React.useState<boolean>(false);
   const [isAnimating, setIsAnimating] = React.useState<boolean>(false);
 
   const parentTabs = Object.keys(projects);
-  const childTabs = activeParentTab === "Smart Contracts" ? ["Solana", "EVM"] : undefined;
+  const childTabs = undefined;
 
   const getCurrentProjects = () => {
-    if (activeParentTab === "Smart Contracts" && activeChildTab) {
-      return projects["Smart Contracts"]?.[activeChildTab as keyof typeof projects["Smart Contracts"]] || {};
-    }
     return projects[activeParentTab as keyof typeof projects] || {};
   };
 
@@ -133,7 +127,7 @@ export function ProjectList({ projects }: ProjectListProps) {
         activeParentTab={activeParentTab}
         onParentTabChange={(tab) => {
           setActiveParentTab(tab);
-          setActiveChildTab(tab === "Smart Contracts" ? "Solana" : null);
+          setActiveChildTab(null);
         }}
         childTabs={childTabs}
         activeChildTab={activeChildTab || undefined}
