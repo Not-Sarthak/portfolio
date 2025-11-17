@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Book, HomeIcon, NotebookIcon, TrophyIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, TrophyIcon } from "lucide-react";
 import { GithubIcon } from "../../public/icons/github";
 import { LinkIcon } from "../../public/icons/link";
 
@@ -20,7 +20,6 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
     { href: "/wins", icon: TrophyIcon, label: "Wins" },
-    { href: "/bookshelf", icon: Book, label: "Bookshelf" },
   ],
   contact: {
     email: "notsarthakshah@gmail.com",
@@ -61,6 +60,16 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     },
   },
   work: [
+    {
+      company: "MetEngine",
+      href: "",
+      location: "Remote",
+      title: "Founding Engineer",
+      logoUrl: "/work/metengine.svg",
+      start: "June 2025",
+      end: "Present",
+      description: "",
+    },
     {
       company: "Gasyard",
       href: "https://gasyard.fi/",
@@ -144,42 +153,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
           description:
             "A modern UI component library for Solana dApps, featuring customizable components native to Solana Ecosystem.",
         },
-        EthMumbai: {
-          id: 3,
-          links: [
-            {
-              type: "Website",
-              href: "https://mumbaieth.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/eth-mumbai",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A website for EthMumbai with an SVG logo that changes colors based on user preferences.",
-        },
-        "AO Calculator": {
-          id: 4,
-          links: [
-            {
-              type: "Website",
-              href: "https://ao-unit-converter.ar-io.net/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/ao-unit-converter",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A unit converter for the AO ecosystem, helping developers and users convert between AO and Armstrong.",
-        },
         "SendAI Dashboard": {
-          id: 5,
+          id: 3,
           links: [
             {
               type: "Website",
@@ -501,21 +476,4 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       type: "hackathon",
     },
   },
-  books: [
-    {
-      title: "Think and Grow Rich - Napoleon Hill",
-    },
-    {
-      title: "Before you Start Up - Pankaj Goyal",
-    },
-    {
-      title: "Zero to One - Peter Thiel",
-    },
-    {
-      title: "The 5 AM Club - Robin Sharma",
-    },
-    {
-      title: "The Network State - Balaji Srinivasan",
-    },
-  ],
 } as const;
