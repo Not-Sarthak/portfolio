@@ -6,7 +6,6 @@ import { DATA } from "@/data/resume";
 import VideoPlayer from "@/components/ui/video";
 import TextEffectWithExit from "@/components/headline";
 import { ProjectList } from "@/components/cards/project-card";
-import { HackathonCard } from "@/components/cards/hackathon-card";
 import { Footer } from "@/components/footer";
 import { CommandPalette } from "@/components/command-palette";
 
@@ -76,7 +75,7 @@ export default function Page() {
               languages, protocols, and blockchains
             </span>
             .
-            <div className="mt-4">
+            {/* <div className="mt-4">
               I've won{" "}
               <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
                 ~20 hackathons
@@ -99,7 +98,7 @@ export default function Page() {
                 Wormhole Fellow
               </span>{" "}
               .
-            </div>
+            </div> */}
             <div className="mt-4">
               Think of this as my brain dump as I try to make sense of the world.
             </div>
@@ -189,46 +188,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="wins" className="pt-20">
-        <div className="flex min-h-0 flex-col justify-center items-center gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="justify-center flex w-32 rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              Wins
-            </div>
-          </BlurFade>
 
-          <BlurFade delay={BLUR_FADE_DELAY * 13.5}>
-            <p className="text-muted-foreground text-sm text-center mt-2">
-              Achievements and recognitions I've received along the way.
-            </p>
-          </BlurFade>
-
-          <div className="pt-4 flex flex-col gap-y-2 border-t border-border/40 w-full">
-            {Object.entries(DATA.wins)
-              .slice(0, 5)
-              .map(([title, data], id) => (
-                <BlurFade key={title} delay={BLUR_FADE_DELAY * 14 + id * 0.05}>
-                  <HackathonCard
-                    key={title}
-                    title={title}
-                    href={data.link || "#"}
-                  />
-                </BlurFade>
-              ))}
-
-            <BlurFade delay={BLUR_FADE_DELAY * 15}>
-              <div className="flex relative justify-center mt-4">
-                <a
-                  href="/wins"
-                  className="inline-flex z-10 items-center justify-center rounded-md bg-[#b0e721] px-2 py-1 text-sm font-medium text-background shadow transition-colors hover:bg-[#b0e721]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  View All Wins
-                </a>
-              </div>
-            </BlurFade>
-          </div>
-        </div>
-      </section>
       <section id="footer" className="pt-20">
         <Footer />
       </section>

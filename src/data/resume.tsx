@@ -118,6 +118,131 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
   openSource: [],
   projects: [
     {
+      Backend: {
+        Aqua: {
+          id: 1,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/aqua",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "Load Testing Tool for Benchmarking Solana Nodes over RPC and gRPC",
+        },
+        Curators: {
+          id: 2,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/curators",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "Curators Backend automates the process of identifying high-performing Liquid Staking Tokens (LSTs) on Solana and facilitates automatic swapping to optimize yield.",
+        },
+        "Ticket Booking CLI": {
+          id: 3,
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/booking-app-cli",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description: "A simple CLI Ticket Booking App in GoLang",
+        },
+      },
+      "Smart Contracts": {
+        Pintel: {
+          id: 1,
+          description:
+            "Precision Prediction Market using Gaussian Probability Distribution",
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/pintel",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+        },
+        "Anchor Turbin3": {
+          id: 2,
+          description: "Minimal Solana Programs built during Turbin3 Builders' Cohort",
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/anchor-turbin3",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+        },
+        "Cyfrin EVM": {
+          id: 3,
+          description: "Lil Projects I Built while watching Cyfrin's Course",
+          links: [
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/cyfrin-evm",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+        },
+      },
+      Frontend: {
+        "Superteam Security Dashboard": {
+          id: 1,
+          links: [
+            {
+              type: "Website",
+              href: "https://st-security.vercel.app/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/st-security",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "Superteam Security Dashboard is a one-stop place to read everything about hacks, exploits, and vulnerabilities in the Solana Ecosystem.",
+        },
+        "Sol UI": {
+          id: 2,
+          links: [
+            {
+              type: "Website",
+              href: "https://sol-ui.vercel.app/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/sol-ui",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description:
+            "A modern UI component library for Solana dApps, featuring customizable components native to Solana Ecosystem.",
+        },
+        "EthMumbai Logo Generator": {
+          id: 3,
+          links: [
+            {
+              type: "Website",
+              href: "https://mumbaieth.vercel.app/",
+              icon: <LinkIcon className="size-9" />,
+            },
+            {
+              type: "Source",
+              href: "https://github.com/Not-Sarthak/eth-mumbai",
+              icon: <GithubIcon className="size-9" />,
+            },
+          ],
+          description: "Eth-Mumbai Dynamic SVG Logo Generator for EthMumbai Bounty",
+        },
+      },
       "Full Stack": {
         Predictify: {
           id: 1,
@@ -197,107 +322,6 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
           ],
           description:
             "Bookmark your Life, with Twinn - A zk-compressed digital badge on Solana for every moment you showed up to.",
-        },
-      },
-      Backend: {
-        Curators: {
-          id: 1,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/curators",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Curators Backend automates the process of identifying high-performing Liquid Staking Tokens (LSTs) on Solana and facilitates automatic swapping to optimize yield.",
-        },
-        "Ticket Booking CLI": {
-          id: 2,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/booking-app-cli",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "A simple CLI Ticket Booking App in GoLang",
-        },
-      },
-      "Smart Contracts": {
-        "Anchor Turbin3": {
-          id: 1,
-          description: "Minimal Solana Programs built during Turbin3 Builders' Cohort",
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/anchor-turbin3",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-        },
-        "Cyfrin EVM": {
-          id: 2,
-          description: "Lil Projects I Built while watching Cyfrin's Course",
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/cyfrin-evm",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-        },
-      },
-      Frontend: {
-        "Superteam Security Dashboard": {
-          id: 1,
-          links: [
-            {
-              type: "Website",
-              href: "https://st-security.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/st-security",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Superteam Security Dashboard is a one-stop place to read everything about hacks, exploits, and vulnerabilities in the Solana Ecosystem.",
-        },
-        "Sol UI": {
-          id: 2,
-          links: [
-            {
-              type: "Website",
-              href: "https://sol-ui.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/sol-ui",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A modern UI component library for Solana dApps, featuring customizable components native to Solana Ecosystem.",
-        },
-        "EthMumbai Logo Generator": {
-          id: 3,
-          links: [
-            {
-              type: "Website",
-              href: "https://mumbaieth.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/eth-mumbai",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "Eth-Mumbai Dynamic SVG Logo Generator for EthMumbai Bounty",
         },
       },
     },
