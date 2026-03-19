@@ -27,7 +27,7 @@ export default function BlogPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>
             <Link
                 className="flex flex-col space-y-1 mb-4 group px-2 py-2 rounded-lg hover:bg-muted/30 transition-all border border-transparent hover:border-border/30"
-                href={`${hashnodeBaseUrl}${post.slug}`}
+                href={post.externalUrl ?? `${hashnodeBaseUrl}${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
