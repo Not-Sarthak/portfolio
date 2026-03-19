@@ -70,7 +70,7 @@ export default function Page() {
             <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
               full-stack developer
             </span>{" "}
-            with experience working with various{" "}
+            with an experience of working with various{" "}
             <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
               languages, protocols, and blockchains
             </span>
@@ -100,7 +100,7 @@ export default function Page() {
               .
             </div> */}
             <div className="mt-4">
-              Think of this as my brain dump as I try to make sense of the world.
+              Think of this place as my brain dump as I try to make sense of the world.
             </div>
             <div className="mt-6 flex justify-center">
               <CommandPalette />
@@ -117,7 +117,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Builds
+                  Projects
                 </div>
                 <p className="text-muted-foreground text-sm">
                   I&apos;ve worked on a variety of projects, from{" "}
