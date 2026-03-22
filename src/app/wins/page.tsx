@@ -49,8 +49,7 @@ export default function WinsPage() {
 
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
         <p className="text-muted-foreground">
-          A collection of achievements, wins, and milestones I've
-          reached throughout my journey.
+          I lose sleep to hackathons, build sprints, & silly little side quests.
         </p>
       </BlurFade>
 
