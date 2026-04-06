@@ -21,12 +21,7 @@ interface Project {
   description: string;
 }
 
-type ProjectsData = {
-  Frontend?: Record<string, Project>;
-  Backend?: Record<string, Project>;
-  "Full Stack"?: Record<string, Project>;
-  "Smart Contracts"?: Record<string, Project>;
-};
+type ProjectsData = Record<string, Project>;
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -35,9 +30,6 @@ export default function Page() {
     return DATA.projects as unknown as ProjectsData;
   };
 
-  const getAllWork = () => {
-    return [...DATA.work, ...DATA.openSource];
-  };
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
