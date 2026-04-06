@@ -76,15 +76,6 @@ export function CommandPalette() {
             if (e2.key === "h" || e2.key === "H") {
               e2.preventDefault();
               window.location.href = "/";
-            } else if (e2.key === "b" || e2.key === "B") {
-              e2.preventDefault();
-              window.location.href = "/blogs";
-            } else if (e2.key === "w" || e2.key === "W") {
-              e2.preventDefault();
-              window.location.href = "/wins";
-            } else if (e2.key === "f" || e2.key === "F") {
-              e2.preventDefault();
-              window.open("https://warpcast.com/0xSarthak", "_blank");
             }
             document.removeEventListener("keydown", handleSecondKey);
           };
@@ -151,26 +142,6 @@ export function CommandPalette() {
         href: "https://x.com/0xSarthak13",
       },
       {
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M4 4 L7 20 L12 8 L17 20 L20 4" />
-          </svg>
-        ),
-        label: "Warpcast",
-        shortcut: "F",
-        href: "https://warpcast.com/0xSarthak",
-      },
-      {
         icon: <Linkedin />,
         label: "LinkedIn",
         shortcut: "L",
@@ -224,40 +195,6 @@ export function CommandPalette() {
         shortcut: "G H",
         href: "/",
       },
-      {
-        icon: (
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="size-5"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 16v-4" />
-            <path d="M12 8h.01" />
-          </svg>
-        ),
-        label: "Blogs",
-        shortcut: "G B",
-        href: "/blogs",
-      },
-      {
-        icon: <TrophyIcon />,
-        label: "Wins",
-        shortcut: "G W",
-        href: "/wins",
-      },
-      {
-        icon: <Book />,
-        label: "Bookshelf",
-        shortcut: "G S",
-        href: "/bookshelf",
-      },
     ],
   };
 
@@ -279,13 +216,13 @@ export function CommandPalette() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+        className="hidden sm:inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
       >
         Press{" "}
         <kbd className="px-1.5 py-0.5 text-xs bg-muted border border-border rounded">
           ⌘ K
         </kbd>{" "}
-        to <span className="underline text-foreground font-pacifico">get in touch</span> →
+        to <span className="underline text-foreground">get in touch</span> →
       </button>
 
       {mounted &&

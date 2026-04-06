@@ -1,13 +1,13 @@
 "use client";
 
 import BlurFade from "@/components/text/blur-fade";
-import { ResumeCard } from "@/components/cards/resume-card";
 import { DATA } from "@/data/resume";
-import VideoPlayer from "@/components/ui/video";
-import TextEffectWithExit from "@/components/headline";
 import { ProjectList } from "@/components/cards/project-card";
 import { Footer } from "@/components/footer";
 import { CommandPalette } from "@/components/command-palette";
+import { allBlogPosts } from "@/data/blog";
+import VideoPlayer from "@/components/ui/video";
+import { OpenSourceList } from "@/components/open-source";
 
 interface ProjectLink {
   type: string;
@@ -32,7 +32,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   const getAllProjects = () => {
-    return DATA.projects[0] as unknown as ProjectsData;
+    return DATA.projects as unknown as ProjectsData;
   };
 
   const getAllWork = () => {
@@ -43,99 +43,43 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-2">
-          <div className="flex-col flex flex-1 justify-center items-center space-y-1.5">
-            <BlurFade
-              delay={BLUR_FADE_DELAY}
-              className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none flex items-center gap-3"
-            >
-              <div className="font-serif italic main-text-in">
-                <TextEffectWithExit />
-              </div>
-            </BlurFade>
+          <div className="flex gap-6 items-start">
+            <div className="flex-1">
+              <h1 className="font-bold">Sarthak Shah</h1>
+              <p className="text-gray-400 text-sm">backend / smart contract engineer</p>
+              <p className="mt-4 text-sm">
+                I'm a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
+              </p>
+              <p className="mt-4 text-sm">
+                I love working with financial systems, quantitative research, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra as weekend gigs.
+              </p>
+              <p className="mt-4 text-sm">
+                I enjoy participating in hackathons and have won ~20 of them. Also, in my free time, I obsess over cameras, drones, and bikes.
+              </p>
+              <p className="mt-4 text-sm">
+                Links: {" "}
+                <a href="https://www.linkedin.com/in/sarthak-shah-49267b224/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
+                <a href="https://x.com/0xSarthak13" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Twitter]</a>{" "}
+                <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>
+              </p>
+            </div>
+            <img src="/me.jpg" alt="Sarthak Shah" className="w-28 h-28 rounded object-cover shrink-0" />
           </div>
-          <BlurFade
-            delay={BLUR_FADE_DELAY * 2}
-            className="flex justify-end gap-3 pb-4"
-          >
-            <span className="text-muted-foreground font-light tracking-wide text-sm italic opacity-80 hover:opacity-100 transition-opacity duration-300">
-              — developer
-            </span>
-          </BlurFade>
         </div>
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <div className="prose max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert leading-[1.5]">
-            I'm a{" "}
-            <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-              full-stack developer
-            </span>{" "}
-            with an experience of working with various{" "}
-            <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-              languages, protocols, and blockchains
-            </span>
-            .
-            {/* <div className="mt-4">
-              I've won{" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                ~20 hackathons
-              </span>{" "}
-              and enjoy{" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                contributing
-              </span>{" "}
-              to open source projects. I'm a member at{" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                SuperteamIn
-              </span>,{" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                FBI
-              </span>{" "}
-              (@callusfbi), and the {" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-              Network School</span>, and also a{" "}
-              <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                Wormhole Fellow
-              </span>{" "}
-              .
-            </div> */}
-            <div className="mt-4">
-              Think of this place as my brain dump as I try to make sense of the world.
-            </div>
-            <div className="mt-6 flex justify-center">
-              <CommandPalette />
-            </div>
+          <div className="mt-6 flex justify-center">
+            <CommandPalette />
           </div>
         </BlurFade>
       </section>
-      <BlurFade delay={BLUR_FADE_DELAY}>
-            <VideoPlayer src="/sarthak-pfp.mp4" />
-          </BlurFade>
       <section id="projects">
-        <div className="space-y-8 w-full py-6">
+        <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Projects
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  I&apos;ve worked on a variety of projects, from{" "}
-                  <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                    frontend
-                  </span>{" "}
-                  to{" "}
-                  <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                    backend
-                  </span>{" "}
-                  and even{" "}
-                  <span className="font-semibold hover:text-foreground/80 cursor-pointer text-foreground">
-                    smart contracts
-                  </span>
-                  . <br />
-                  Here are a few of my favorites.
-                </p>
-              </div>
+            <div>
+              <h2 className="text-gray-400 text-sm">Projects</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
 
@@ -146,48 +90,112 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="work" className="pt-20">
-        <div className="flex min-h-0 flex-col justify-center items-center gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <div className="justify-center flex w-42 rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              Work Experience
+      <section id="work">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div>
+              <h2 className="text-gray-400 text-sm">Work</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
-
-          <div className="flex flex-col border-t pt-2 border-border/40 w-full">
-            {getAllWork().length > 0 ? (
-              getAllWork().map((item: any, id: number) => (
-                <BlurFade
-                  key={item.company}
-                  delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-                >
-                  <ResumeCard
-                    key={item.company}
-                    logoUrl={item.logoUrl || "/placeholder-logo.png"}
-                    altText={item.company}
-                    title={item.company}
-                    subtitle={item.title}
-                    href={item.href}
-                    period={
-                      item.start && item.end
-                        ? `${item.start} - ${item.end || "Present"}`
-                        : ""
-                    }
-                    description={item.description}
-                    prLinks={item.prLinks}
-                    isOpenSource={!!item.prLinks}
-                  />
-                </BlurFade>
-              ))
-            ) : (
-              <div className="py-8 text-center text-muted-foreground text-sm italic">
-                No work experience to show yet. Check back soon!
-              </div>
-            )}
-          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="py-2 text-sm">
+              <p><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">[june 2025 – present]</span> <span className="text-gray-400">— founding engineer</span></p>
+              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
+                <li>researched across defi verticals like liquidity providing, lending &amp; borrowing, yield-bearing vaults, and launchpads</li>
+                <li>built <span className="text-foreground">3ms</span> data pipelines — parsing (manual, codama, carbon), indexing (yellowstone grpc), and historical backfilling (jetstreamer firehose)</li>
+                <li>built backend microservices in axum (rust) and typescript</li>
+                <li>owned deployments, ci/cd, and the entire aws infrastructure</li>
+                <li>ensured scalability and reliability with kafka, redis, docker, clickhouse, and postgresql — achieving <span className="text-foreground">~95%</span> stable uptime while handling <span className="text-foreground">multiple GBs</span> of data per day</li>
+                <li>built ui for chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid) and optimised webapp frontend (<span className="text-foreground">$114.25m</span> volume managed, <span className="text-foreground">$100k</span> arr)</li>
+                {/* <li>wrote metengine-vaults program and coordinated with auditing firms pre-mainnet launch</li> */}
+              </ul>
+            </div>
+            <div className="py-2 text-sm">
+              <p><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">[jan 2025 – may 2025]</span> <span className="text-gray-400">— full stack developer</span></p>
+              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
+                <li>built backend with fastify, docker, and postgresql — <span className="text-foreground">$570k</span> in volume, <span className="text-foreground">120k</span> requests</li>
+                <li>implemented cross-chain bridge routes for hyperliquid, movement, monad, and other evm/non-evm chains</li>
+                <li>built bridge explorer for transaction tracking and fuelbae agent for defi actions across protocols</li>
+              </ul>
+            </div>
+            <div className="py-2 text-sm">
+              <p><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="font-medium">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">[mar 2024 – dec 2024]</span> <span className="text-gray-400">— full stack developer</span></p>
+              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
+                <li>one of the first <span className="text-foreground">10</span> builders on ao during its early stage</li>
+                <li>wrote smart contracts in lua for the ao ecosystem and battle-tested core infrastructure</li>
+                <li>built frontend tutorials, ui components, docs, and technical blogs</li>
+              </ul>
+            </div>
+            <div className="py-2 text-sm">
+              <p>&amp; previously: 2x other startups and 3x freelance clients</p>
+            </div>
+          </BlurFade>
         </div>
       </section>
 
+
+      <section id="open-source">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 14.5}>
+            <div>
+              <h2 className="text-gray-400 text-sm">Open Source</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14.6}>
+            <OpenSourceList />
+          </BlurFade>
+        </div>
+      </section>
+
+      <section id="blogs">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
+            <div>
+              <h2 className="text-gray-400 text-sm">Writing — my thoughts, learnings and everything in between</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div>
+              {allBlogPosts.map((post) => (
+                <div key={post.id} className="py-0.5 text-sm">
+                  <a
+                    href={post.externalUrl ?? `https://0xsarthak.hashnode.dev${post.slug}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200"
+                  >
+                    {post.title.toLowerCase()}
+                  </a>
+                  <span className="text-gray-400"> — {post.publishedAt.toLowerCase()}</span>
+                </div>
+              ))}
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      <section id="video" className="py-6">
+        <BlurFade delay={BLUR_FADE_DELAY * 17}>
+          <VideoPlayer src="/sarthak-pfp.mp4" />
+        </BlurFade>
+      </section>
+
+      {/* <section id="wins">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div>
+              <h2 className="text-gray-400 text-sm">Hackathon Wins</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
+            <HackathonWins />
+          </BlurFade>
+        </div>
+      </section> */}
 
       <section id="footer" className="pt-20">
         <Footer />

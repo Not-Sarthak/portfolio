@@ -18,8 +18,6 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
   avatarUrl: "/me.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/wins", icon: TrophyIcon, label: "Wins" },
   ],
   contact: {
     email: "notsarthakshah@gmail.com",
@@ -116,216 +114,161 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     },
   ],
   openSource: [],
-  projects: [
-    {
-      Backend: {
-        Aqua: {
-          id: 1,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/aqua",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Load Testing Tool for Benchmarking Solana Nodes over RPC and gRPC",
+  projects: {
+    "gossip-toy": {
+      id: 0,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/gossip-rs",
+          icon: <GithubIcon className="size-9" />,
         },
-        Curators: {
-          id: 2,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/curators",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Curators Backend automates the process of identifying high-performing Liquid Staking Tokens (LSTs) on Solana and facilitates automatic swapping to optimize yield.",
-        },
-        "Ticket Booking CLI": {
-          id: 3,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/booking-app-cli",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "A simple CLI Ticket Booking App in GoLang",
-        },
-      },
-      "Smart Contracts": {
-        Pintel: {
-          id: 1,
-          description:
-            "Precision Prediction Market using Gaussian Probability Distribution",
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/pintel",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-        },
-        "Anchor Turbin3": {
-          id: 2,
-          description: "Minimal Solana Programs built during Turbin3 Builders' Cohort",
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/anchor-turbin3",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-        },
-        "Cyfrin EVM": {
-          id: 3,
-          description: "Lil Projects I Built while watching Cyfrin's Course",
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/cyfrin-evm",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-        },
-      },
-      Frontend: {
-        "Superteam Security Dashboard": {
-          id: 1,
-          links: [
-            {
-              type: "Website",
-              href: "https://st-security.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/st-security",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Superteam Security Dashboard is a one-stop place to read everything about hacks, exploits, and vulnerabilities in the Solana Ecosystem.",
-        },
-        "Sol UI": {
-          id: 2,
-          links: [
-            {
-              type: "Website",
-              href: "https://sol-ui.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/sol-ui",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A modern UI component library for Solana dApps, featuring customizable components native to Solana Ecosystem.",
-        },
-        "EthMumbai Logo Generator": {
-          id: 3,
-          links: [
-            {
-              type: "Website",
-              href: "https://mumbaieth.vercel.app/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/eth-mumbai",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "Eth-Mumbai Dynamic SVG Logo Generator for EthMumbai Bounty",
-        },
-      },
-      "Full Stack": {
-        Predictify: {
-          id: 1,
-          links: [
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/predictify",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A Polymarket Telegram bot with 2.5k+ users and $100k+ in volume with features such as market alerts, copytrading, and spot trading.",
-        },
-        Hunch: {
-          id: 2,
-          links: [
-            {
-              type: "Website",
-              href: "https://www.hunchkaro.xyz/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/hunch-lens",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A social trading platform connecting people who spot viral content early with those who want to profit from it. Create markets for viral posts, trade on insights, and earn from your predictions.",
-        },
-        Ticker: {
-          id: 3,
-          links: [
-            {
-              type: "Website",
-              href: "https://farcaster.xyz/~/mini-apps/launch?domain=ticker.megabyte0x.xyz",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/ticker",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description: "A Farcaster Mini-App to buy RWA Assets Onchain",
-        },
-        Vox: {
-          id: 4,
-          links: [
-            {
-              type: "Website",
-              href: "https://voxnow.xyz/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/vox",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "A Ticket-Reselling platform for events, that allows users to buy and sell tickets for events.",
-        },
-        Twinn: {
-          id: 5,
-          links: [
-            {
-              type: "Website",
-              href: "https://usetwinn.com/",
-              icon: <LinkIcon className="size-9" />,
-            },
-            {
-              type: "Source",
-              href: "https://github.com/Not-Sarthak/twinn",
-              icon: <GithubIcon className="size-9" />,
-            },
-          ],
-          description:
-            "Bookmark your Life, with Twinn - A zk-compressed digital badge on Solana for every moment you showed up to.",
-        },
-      },
+      ],
+      description: "reimplementing toy version of solana's gossip protocol from scratch",
     },
-  ],
+    Aqua: {
+      id: 1,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/aqua",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "load testing tool for benchmarking solana nodes over rpc and grpc",
+    },
+    Curators: {
+      id: 2,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/curators",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
+    },
+    Pintel: {
+      id: 4,
+      language: "/languages/solidity.svg",
+      description:
+        "precision prediction market using gaussian probability distribution",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/pintel",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+    },
+    "Anchor Turbin3": {
+      id: 5,
+      language: "/languages/rust.svg",
+      description: "minimal solana programs built during turbin3 builders' cohort",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/anchor-turbin3",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+    },
+    "Cyfrin EVM": {
+      id: 6,
+      language: "/languages/solidity.svg",
+      description: "lil projects i built while watching cyfrin's solidity course",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/cyfrin-evm",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+    },
+    "Solana Security Dashboard": {
+      id: 7,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Website",
+          href: "https://st-security.vercel.app/",
+          icon: <LinkIcon className="size-9" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/st-security",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "track hacks, exploits, and vulnerabilities in the solana ecosystem.",
+    },
+    Predictify: {
+      id: 8,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/predictify",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
+    },
+    Hunch: {
+      id: 9,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Website",
+          href: "https://www.hunchkaro.xyz/",
+          icon: <LinkIcon className="size-9" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/hunch-lens",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "social trading platform for creating and trading onchain markets on viral content.",
+    },
+    Ticker: {
+      id: 10,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Website",
+          href: "https://farcaster.xyz/~/mini-apps/launch?domain=ticker.megabyte0x.xyz",
+          icon: <LinkIcon className="size-9" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/ticker",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
+    },
+    "Ticket Booking CLI": {
+      id: 11,
+      language: "/languages/go.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/booking-app-cli",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description: "a simple cli ticket booking app in golang",
+    },
+  },
   wins: {
     "Colosseum Breakout Hackathon - 1x Bounty (Light Protocol)": {
       link: "",

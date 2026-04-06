@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Avenir", "Manrope", "Helvetica", "Arial", "sans-serif"],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
 				serif: [
 					"Playfair Display",
 					"Georgia",
