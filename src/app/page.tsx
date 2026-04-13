@@ -97,7 +97,8 @@ export default function Page() {
                 <li>researched across defi verticals like liquidity providing, lending &amp; borrowing, yield-bearing vaults, and launchpads</li>
                 <li>built <span className="text-foreground">3ms</span> data pipelines — parsing (manual, codama, carbon), indexing (yellowstone grpc), and historical backfilling (jetstreamer firehose)</li>
                 <li>built backend microservices in axum (rust) and typescript</li>
-                <li>owned deployments, ci/cd, and the entire aws infrastructure</li>
+                <li>owned deployments, ci/cd, and the entire monitoring, observability and aws infrastructure</li>
+                <li>set up nginx as a reverse proxy for backend microservices</li>
                 <li>ensured scalability and reliability with kafka, redis, docker, clickhouse, and postgresql — achieving <span className="text-foreground">~95%</span> stable uptime while handling <span className="text-foreground">multiple GBs</span> of data per day</li>
                 <li>built ui for chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid) and optimised webapp frontend (<span className="text-foreground">$114.25m</span> volume managed, <span className="text-foreground">$100k</span> arr)</li>
                 {/* <li>wrote metengine-vaults program and coordinated with auditing firms pre-mainnet launch</li> */}

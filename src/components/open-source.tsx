@@ -52,6 +52,7 @@ const orgs: Org[] = [
       { href: "https://github.com/anza-xyz/agave/pull/10751", title: "validator: emit the deprecated arg warning to logger" },
       { href: "https://github.com/anza-xyz/agave/pull/10750", title: "clap-utils: handle file paths with spaces in parse_signer_source" },
       { href: "https://github.com/anza-xyz/agave/pull/10749", title: "cli: add --authority and --payer flags to solana program extend" },
+      { href: "https://github.com/anza-xyz/agave/pull/11779", title: "core: fix inverted reporting interval check in bls sigverifier" },
     ],
   },
   {

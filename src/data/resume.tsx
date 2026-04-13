@@ -166,6 +166,18 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
     },
+    "Pinocchio Squads v4": {
+      id: 12,
+      language: "/languages/rust.svg",
+      description: "squads v4 multisig rewritten in pinocchio",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/pinocchio-squads-v4",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+    },
     "Anchor Turbin3": {
       id: 5,
       language: "/languages/rust.svg",
