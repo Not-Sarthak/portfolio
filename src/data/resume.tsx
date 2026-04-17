@@ -268,6 +268,18 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
     },
+    "SIMD.live": {
+      id: 13,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Website",
+          href: "https://simd.live/",
+          icon: <LinkIcon className="size-9" />,
+        },
+      ],
+      description: "a readable index of every solana improvement document",
+    },
     "Ticket Booking CLI": {
       id: 11,
       language: "/languages/go.svg",
