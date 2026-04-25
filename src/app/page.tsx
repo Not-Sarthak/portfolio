@@ -170,6 +170,47 @@ export default function Page() {
         </div>
       </section>
 
+      {/* <section id="wins">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
+            <div>
+              <h2 className="text-gray-400 text-sm">Highlighted Wins</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16.6}>
+            <div className="flex flex-col gap-4 mt-2">
+              {(["hackathon", "fellowship", "other"] as const).map((type) => {
+                const items = DATA.highlightedWins.filter((w) => (w.type as string) === type);
+                if (items.length === 0) return null;
+                const label = type === "hackathon" ? "hackathons" : type === "fellowship" ? "fellowships & honors" : "misc";
+                return (
+                  <div key={type}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs text-foreground font-bold uppercase tracking-widest">{label}</span>
+                      <div className="flex-1 h-px bg-gray-300" />
+                    </div>
+                    <div>
+                      {items.map((win) => (
+                        <div key={win.name} className="py-0.5 text-sm">
+                          <div className="flex justify-between gap-4">
+                            <span className="min-w-0">
+                              <span className="inline-block w-20">{win.place}</span>
+                              {win.name}
+                            </span>
+                            <span className="text-gray-400 shrink-0">{win.date}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </BlurFade>
+        </div>
+      </section> */}
+
       <section id="video" className="py-6">
         <BlurFade delay={BLUR_FADE_DELAY * 17}>
           <VideoPlayer src="/sarthak-pfp.mp4" />
