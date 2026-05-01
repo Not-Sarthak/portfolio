@@ -96,7 +96,7 @@ function OrgSection({ org }: { org: Org }) {
               href={pr.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 py-0.5 text-sm text-gray-400 hover:text-foreground transition-colors duration-200"
+              className="flex items-center gap-1.5 py-0.5 text-sm text-gray-500 hover:text-foreground transition-colors duration-200"
             >
               <MergeIcon />
               {pr.title}

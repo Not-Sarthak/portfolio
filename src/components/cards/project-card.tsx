@@ -46,7 +46,7 @@ export function ProjectCard({
           {title.toLowerCase()}
         </Link>
         {description && (
-          <span className="text-gray-400"> — {description}</span>
+          <span className="text-gray-500"> — {description}</span>
         )}
       </p>
     </div>

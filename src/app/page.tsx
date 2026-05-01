@@ -70,7 +70,7 @@ export default function Page() {
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div>
-              <h2 className="text-gray-400 text-sm">Projects</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Projects</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
@@ -86,14 +86,14 @@ export default function Page() {
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div>
-              <h2 className="text-gray-400 text-sm">Work</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Work</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <div className="py-2 text-sm">
               <p><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">[june 2025 – present]</span> <span className="text-gray-400">— founding engineer</span></p>
-              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
+              <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>researched across defi verticals like liquidity providing, lending &amp; borrowing, yield-bearing vaults, and launchpads</li>
                 <li>built <span className="text-foreground">3ms</span> data pipelines — parsing (manual, codama, carbon), indexing (yellowstone grpc), and historical backfilling (jetstreamer firehose)</li>
                 <li>built backend microservices in axum (rust) and typescript</li>
@@ -106,18 +106,20 @@ export default function Page() {
             </div>
             <div className="py-2 text-sm">
               <p><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">[jan 2025 – may 2025]</span> <span className="text-gray-400">— full stack developer</span></p>
-              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
-                <li>built backend with fastify, docker, and postgresql — <span className="text-foreground">$570k</span> in volume, <span className="text-foreground">120k</span> requests</li>
-                <li>implemented cross-chain bridge routes for hyperliquid, movement, monad, and other evm/non-evm chains</li>
-                <li>built bridge explorer for transaction tracking and fuelbae agent for defi actions across protocols</li>
+              <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
+                <li>co-built the fastify backend with a team of <span className="text-foreground">5</span> (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
+                <li>wrote integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
+                <li>shipped a public-facing bridge explorer for transaction tracking</li>
+                <li>built fuelbae, an ai agent executing defi actions across aave, uniswap, hyperliquid, and curve</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
               <p><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="font-medium">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">[mar 2024 – dec 2024]</span> <span className="text-gray-400">— full stack developer</span></p>
-              <ul className="text-gray-400 text-sm list-disc ml-4 mt-0.5">
-                <li>one of the first <span className="text-foreground">10</span> builders on ao during its early stage</li>
-                <li>wrote smart contracts in lua for the ao ecosystem and battle-tested core infrastructure</li>
-                <li>built frontend tutorials, ui components, docs, and technical blogs</li>
+              <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
+                <li>shipped the lua smart contracts powering 0rbit's oracle, bringing any price feed, data feed, or api onto <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">ao</a> (arweave's actor-oriented compute layer)</li>
+                <li>one of the first <span className="text-foreground">10</span> builders on <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">ao</a> in its earliest days</li>
+                <li>battle-tested 0rbit's node pre-launch, surfacing edge cases and stability issues before mainnet</li>
+                <li>authored <span className="text-foreground">4</span> developer tutorials with working demo apps to onboard new builders to the ecosystem</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
@@ -132,7 +134,7 @@ export default function Page() {
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 14.5}>
             <div>
-              <h2 className="text-gray-400 text-sm">Open Source</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Open Source</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
@@ -146,7 +148,7 @@ export default function Page() {
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div>
-              <h2 className="text-gray-400 text-sm">Writing — my thoughts, learnings and everything in between</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Writing — my thoughts, learnings and everything in between</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
@@ -170,11 +172,11 @@ export default function Page() {
         </div>
       </section>
 
-      {/* <section id="wins">
+      <section id="wins">
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
             <div>
-              <h2 className="text-gray-400 text-sm">Highlighted Wins</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Highlighted Wins</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
@@ -206,10 +208,31 @@ export default function Page() {
                   </div>
                 );
               })}
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs text-foreground font-bold uppercase tracking-widest">sidequests & fun</span>
+                  <div className="flex-1 h-px bg-gray-300" />
+                </div>
+                <div>
+                  {DATA.sidequests.map((sq) => (
+                    <div key={sq.url} className="py-0.5 text-sm">
+                      <a
+                        href={sq.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200"
+                      >
+                        {sq.name}
+                      </a>
+                      <span className="text-gray-500"> — {sq.detail}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </BlurFade>
         </div>
-      </section> */}
+      </section>
 
       <section id="video" className="py-6">
         <BlurFade delay={BLUR_FADE_DELAY * 17}>
@@ -221,7 +244,7 @@ export default function Page() {
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div>
-              <h2 className="text-gray-400 text-sm">Hackathon Wins</h2>
+              <h2 className="text-gray-500 text-sm underline underline-offset-4 decoration-gray-300">Hackathon Wins</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>

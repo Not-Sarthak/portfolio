@@ -202,24 +202,6 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
     },
-    "Solana Security Dashboard": {
-      id: 7,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Website",
-          href: "https://st-security.vercel.app/",
-          icon: <LinkIcon className="size-9" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/st-security",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "track hacks, exploits, and vulnerabilities in the solana ecosystem.",
-    },
     Predictify: {
       id: 8,
       language: "/languages/typescript.svg",
@@ -267,6 +249,24 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
+    },
+    "Solana Security Dashboard": {
+      id: 7,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Website",
+          href: "https://st-security.vercel.app/",
+          icon: <LinkIcon className="size-9" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/st-security",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "track hacks, exploits, and vulnerabilities in the solana ecosystem.",
     },
     "SIMD.live": {
       id: 13,
@@ -383,8 +383,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     { name: "stellar builders residency", place: "top 5", date: "jul 2024", type: "fellowship" },
     { name: "colosseum radar hackathon — side track (ore)", place: "1st place", date: "oct 2024", type: "hackathon" },
     { name: "based india", place: "top 10", date: "oct 2024", type: "hackathon" },
-    { name: "funding the commons bangkok edition", place: "1st place", date: "nov 2024", type: "hackathon" },
-    { name: "bitcoin hackathon", place: "1st place", date: "nov 2024", type: "hackathon" },
+    { name: "funding the commons bangkok edition (talent protocol)", place: "1st place", date: "nov 2024", type: "hackathon" },
+    { name: "encode club bitcoin hackathon", place: "1st place", date: "nov 2024", type: "hackathon" },
     { name: "bnbhack", place: "top 5", date: "nov 2024", type: "hackathon" },
     { name: "ethbangkok", place: "1st place", date: "nov 2024", type: "hackathon" },
     { name: "ethindia", place: "top 5", date: "dec 2024", type: "hackathon" },
@@ -392,5 +392,9 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     { name: "superteam india", place: "member", date: "—", type: "fellowship" },
     { name: "superteam security dashboard", place: "1st place", date: "apr 2025", type: "hackathon" },
     { name: "colosseum breakout hackathon — side track (light protocol)", place: "1st place", date: "may 2025", type: "hackathon" },
+  ],
+  sidequests: [
+    { name: "optimization arena's prop amm challenge", detail: "scored 517 (top 25)", url: "https://www.optimizationarena.com/prop-amm" },
+    { name: "optimization arena's amm challenge", detail: "scored 523 (top 25)", url: "https://www.optimizationarena.com/amm" },
   ],
 } as const;
