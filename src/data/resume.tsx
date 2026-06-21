@@ -306,6 +306,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     { name: "encode club bitcoin hackathon", place: "1st place", date: "nov 2024", type: "hackathon" },
     { name: "bnbhack", place: "top 5", date: "nov 2024", type: "hackathon" },
     { name: "ethbangkok", place: "1st place", date: "nov 2024", type: "hackathon" },
+    { name: "ethbangkok — side track (flow)", place: "1st place", date: "nov 2024", type: "hackathon" },
     { name: "educhain", place: "bounty", date: "nov 2024", type: "hackathon" },
     { name: "ethindia", place: "top 5", date: "dec 2024", type: "hackathon" },
     { name: "onchain ai fellowship by fbi", place: "fellow", date: "dec 2024", type: "fellowship" },
