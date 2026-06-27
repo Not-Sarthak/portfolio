@@ -292,6 +292,45 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description: "a simple cli ticket booking app in golang",
     },
+    "Oracle Aggregator": {
+      id: 14,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/oracle-aggregator",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "oracle aggregator for solana with support for pyth, switchboard, dex amms, twap, and composable price transforms",
+    },
+    "Nock": {
+      id: 15,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/nock",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "per-maker on-chain order book exchange (clob) on solana",
+    },
+    "Resolut": {
+      id: 16,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/resolut",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "an optimistic oracle (oo) that can record any verifiable truth or data onto a blockchain",
+    },
   },
   highlightedWins: [
     { name: "arweave hacker house #1", place: "2nd place", date: "nov 2023", type: "hackathon" },
