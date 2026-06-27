@@ -329,7 +329,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
       description:
-        "an optimistic oracle (oo) that can record any verifiable truth or data onto a blockchain",
+        "an optimistic oracle (oo) that can record any verifiable truth or data onto solana",
     },
   },
   highlightedWins: [
