@@ -56,6 +56,13 @@ const orgs: Org[] = [
     ],
   },
   {
+    name: "blueshift-gg/quasar",
+    prs: [
+      { href: "https://github.com/blueshift-gg/quasar/pull/444", title: "fix(lang): reject account self-close" },
+      { href: "https://github.com/blueshift-gg/quasar/pull/442", title: "fix(lang): validate CPI return data before decode" },
+    ],
+  },
+  {
     name: "socketio/socket.io",
     prs: [
       { href: "https://github.com/socketio/socket.io/pull/5457", title: "fix(adapter): do not skip local broadcast when publishAndReturnOffset throws" },
