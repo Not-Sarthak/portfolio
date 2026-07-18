@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import BlurFade from "@/components/text/blur-fade";
 import { DATA } from "@/data/resume";
 import { ProjectList } from "@/components/cards/project-card";
@@ -210,6 +211,13 @@ export default function Page() {
                       <span className="text-gray-500"> — {sq.detail}</span>
                     </div>
                   ))}
+                  <div className="py-0.5 text-sm">
+                    <Link href="/lab" className="lab-chip">
+                      <span className="lab-chip__beam" aria-hidden="true" />
+                      <span className="lab-chip__label">Lab</span>
+                    </Link>
+                    <span className="text-gray-500"> — i experiment with design engineering</span>
+                  </div>
                 </div>
               </div>
             </div>

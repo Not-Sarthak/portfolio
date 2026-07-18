@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      transitionTimingFunction: {
+        "out-cubic": "var(--ease-out)",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
 				serif: [

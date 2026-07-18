@@ -35,6 +35,8 @@
     --ring: 0 0% 3.9%;
 
     --radius: 0.5rem;
+
+    --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 
@@ -44,5 +46,222 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Lab chip — grey pill with a soft hue-shifting beam on hover (ref: arlan.me Vault chip) */
+.lab-chip {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px 5px;
+  border-radius: 6px;
+  line-height: 1.25;
+  color: #1b1b1b;
+  background-color: #ebebeb;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.lab-chip__beam {
+  position: absolute;
+  inset: -60%;
+  z-index: 0;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    #ffd3e0,
+    #e3c9ff,
+    #c5f2e6,
+    #ffe7c4,
+    #ffd3e0
+  );
+  filter: blur(7px);
+  opacity: 0.85;
+  transform: scale(1.1);
+  animation: lab-beam-shift 6s linear infinite;
+  pointer-events: none;
+}
+
+.lab-chip__label {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes lab-beam-shift {
+  to {
+    transform: scale(1.1) rotate(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-chip__beam {
+    animation: none;
+  }
+}
+
+/* Playground range slider — minimal, matches the site's grays */
+.lab-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+.lab-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #1b1b1b;
+  transition: transform 0.15s var(--ease-out);
+}
+.lab-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+.lab-range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 9999px;
+  background: #1b1b1b;
+  cursor: pointer;
+}
+.lab-range::-moz-range-track {
+  height: 2px;
+  border-radius: 2px;
+  background: #e5e7eb;
+}
+
+/* Shared motion primitives for /lab experiments (duration set inline per component) */
+.lab-spin {
+  animation: lab-spin 12s linear infinite;
+}
+@keyframes lab-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.lab-pulse {
+  animation: lab-pulse 3s ease-in-out infinite;
+}
+@keyframes lab-pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.lab-drift-a {
+  animation: lab-drift-a 14s ease-in-out infinite;
+}
+.lab-drift-b {
+  animation: lab-drift-b 14s ease-in-out infinite;
+}
+@keyframes lab-drift-a {
+  0%,
+  100% {
+    transform: translate(-12%, -8%);
+  }
+  50% {
+    transform: translate(28%, 22%);
+  }
+}
+@keyframes lab-drift-b {
+  0%,
+  100% {
+    transform: translate(18%, 16%);
+  }
+  50% {
+    transform: translate(-20%, -14%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-spin,
+  .lab-pulse,
+  .lab-drift-a,
+  .lab-drift-b {
+    animation: none;
+  }
+}
+
+/* iMessage sent bubble: subtle top-lit gradient + bottom-right tail.
+   --bub = bubble color, --msg-bg = the surface behind it (to carve the tail). */
+.msg-bubble {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 8px 16px;
+  /* a lighter tint of the bubble color up top (sky-blue for blue), fading to pure
+     --bub by ~50% — so the bottom half, where the tail attaches, still matches it */
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--bub) 55%, white),
+    var(--bub) 50%
+  );
+}
+/* The bubble stays; only the text inside slides (clipped to one line). */
+.msg-clip {
+  position: relative;
+  overflow: hidden;
+  height: 1.25em;
+  transition: width 0.3s var(--ease-out);
+}
+.msg-clip > span {
+  display: block;
+}
+.msg-in {
+  animation: msg-in 0.4s var(--ease-out) both;
+}
+.msg-out {
+  animation: msg-out 0.34s var(--ease-out) both;
+}
+@keyframes msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes msg-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Code panel fade on tab switch */
+.lab-fade-in {
+  animation: lab-fade-in 0.18s var(--ease-out);
+}
+@keyframes lab-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lab-fade-in {
+    animation: none;
   }
 }
