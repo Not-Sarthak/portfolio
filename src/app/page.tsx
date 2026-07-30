@@ -28,14 +28,14 @@ export default function Page() {
                 I'm a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
               </p>
               <p className="mt-4 text-sm">
-                I love working with financial systems, quantitative research, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra as weekend gigs.
+                I love working with financial systems, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra as weekend gigs.
               </p>
               <p className="mt-4 text-sm">
                 I enjoy participating in hackathons and have won ~20 of them. Also, in my free time, I obsess over cameras, drones, and bikes.
               </p>
               <p className="mt-4 text-sm">
                 Links: {" "}
-                <a href="https://www.linkedin.com/in/sarthak-shah-49267b224/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
+                <a href="https://www.linkedin.com/in/notsarthakshah/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
                 <a href="https://x.com/0xSarthak13" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Twitter]</a>{" "}
                 <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>
               </p>
@@ -79,35 +79,34 @@ export default function Page() {
             <div className="py-2 text-sm">
               <p><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">[june 2025 – present]</span> <span className="text-gray-400">— founding engineer</span></p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
-                <li>designed and implemented protocols across defi verticals like amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, and launchpads</li>
-                <li>engineered <span className="text-foreground">3ms</span> data pipelines — parsing (manual, codama, carbon), indexing (yellowstone grpc), and historical backfilling (jetstreamer firehose)</li>
+                <li>researched, designed and implemented protocols across defi verticals like amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, perps, and launchpads</li>
+                <li>engineered <span className="text-foreground">3ms</span> data pipelines — <span className="text-foreground">parsing</span> (manual, codama, carbon), <span className="text-foreground">indexing</span> (yellowstone grpc), and <span className="text-foreground">historical backfilling</span> (jetstreamer firehose)</li>
                 <li>built backend microservices in axum (rust) and typescript</li>
-                <li>owned deployments, ci/cd, and the entire monitoring, observability and aws infrastructure (ec2, elasticache, rds, and s3)</li>
-                <li>set up nginx as a reverse proxy for backend microservices</li>
+                <li>owned deployments, ci/cd, nginx reverse proxy for backend microservices, and the entire monitoring, observability and aws infrastructure (ec2, elasticache, rds, and s3)</li>
                 <li>ensured scalability and reliability with kafka, redis, docker, clickhouse, and postgresql — achieving <span className="text-foreground">~95%</span> stable uptime while handling <span className="text-foreground">multiple GBs</span> of data per day</li>
                 <li>shipped ui for chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid) and optimised webapp frontend (<span className="text-foreground">$114m</span> volume managed, <span className="text-foreground">$100k</span> arr)</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">[jan 2025 – may 2025]</span> <span className="text-gray-400">— full stack developer</span></p>
+              <p><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">[jan 2025 – may 2025]</span> <span className="text-gray-400">— software developer</span></p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>co-built the fastify backend (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
-                <li>wrote integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
+                <li>contributed to writing integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
                 <li>shipped a public-facing bridge explorer for transaction tracking</li>
                 <li>created fuelbae, an ai agent executing defi actions across aave, uniswap, hyperliquid, and curve</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="font-medium">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">[mar 2024 – dec 2024]</span> <span className="text-gray-400">— full stack developer</span></p>
+              <p><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="font-medium">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">[mar 2024 – dec 2024]</span> <span className="text-gray-400">— software developer</span></p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>one of the first <span className="text-foreground">10</span> builders on <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">AO</a> in its earliest days</li>
                 <li>contributed to the lua smart contracts powering 0rbit's oracle, making it the <span className="text-foreground">first protocol live on AO</span> and bringing any price feed, data feed, or api onto AO (arweave's actor-oriented compute layer)</li>
-                <li>battle-tested 0rbit's node pre-launch, surfacing edge cases and stability issues before mainnet</li>
-                <li>authored <span className="text-foreground">4</span> developer tutorials with working demo apps to onboard new builders to the ecosystem</li>
+                <li>tested 0rbit's node pre-launch, surfacing edge cases and stability issues before mainnet</li>
+                <li>wrote <span className="text-foreground">4</span> developer blogs with working demo apps to onboard new builders to the ecosystem</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p>&amp; previously: 6x freelance clients <span className="text-gray-400">— mostly backend &amp; protocol eng.</span></p>
+              <p>&amp; 6x freelance clients <span className="text-gray-400">— mostly backend &amp; protocol eng.</span></p>
             </div>
           </BlurFade>
         </div>

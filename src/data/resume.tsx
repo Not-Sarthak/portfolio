@@ -31,7 +31,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/sarthak-shah-49267b224/",
+        url: "https://www.linkedin.com/in/notsarthakshah/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -303,7 +303,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
       description:
-        "oracle aggregator for solana with support for pyth, switchboard, dex amms, twap, and composable price transforms",
+        "solana oracle over pyth, switchboard, dex amms, twap & price transforms",
     },
     "Nock": {
       id: 15,

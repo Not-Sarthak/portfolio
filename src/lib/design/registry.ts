@@ -35,9 +35,9 @@ function build(): Experiment[] {
     });
   }
 
-  // Newest first by meta.date, then title.
+  // Oldest first by meta.date, then title — newest experiments land at the end.
   list.sort((a, b) => {
-    const d = b.meta.date.localeCompare(a.meta.date);
+    const d = a.meta.date.localeCompare(b.meta.date);
     return d !== 0 ? d : a.meta.title.localeCompare(b.meta.title);
   });
 

@@ -6,7 +6,7 @@ import { rgbOf, tone } from "./grass/color";
 
 export const meta = {
   title: "Touch the grass",
-  date: "2026-07-16",
+  date: "2026-07-25",
   size: "wide" as const,
   tags: ["Canvas", "Interaction"],
   description:

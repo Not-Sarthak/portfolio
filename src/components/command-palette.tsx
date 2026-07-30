@@ -68,7 +68,7 @@ export function CommandPalette() {
         } else if (e.key === "l" || e.key === "L") {
           e.preventDefault();
           window.open(
-            "https://www.linkedin.com/in/sarthak-shah-49267b224/",
+            "https://www.linkedin.com/in/notsarthakshah/",
             "_blank"
           );
         } else if (e.key === "g" || e.key === "G") {
@@ -145,7 +145,7 @@ export function CommandPalette() {
         icon: <Linkedin />,
         label: "LinkedIn",
         shortcut: "L",
-        href: "https://www.linkedin.com/in/sarthak-shah-49267b224/",
+        href: "https://www.linkedin.com/in/notsarthakshah/",
       },
       {
         icon: (
