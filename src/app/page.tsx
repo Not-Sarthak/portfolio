@@ -107,7 +107,7 @@ export default function Page() {
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p>&amp; previously: 2x other startups and 3x freelance clients</p>
+              <p>&amp; previously: 6x freelance clients <span className="text-gray-400">— mostly backend &amp; protocol eng.</span></p>
             </div>
           </BlurFade>
         </div>
