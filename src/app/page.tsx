@@ -84,7 +84,7 @@ export default function Page() {
                 <li>built backend microservices in axum (rust) and typescript</li>
                 <li>owned deployments, ci/cd, nginx reverse proxy for backend microservices, and the entire monitoring, observability and aws infrastructure (ec2, elasticache, rds, and s3)</li>
                 <li>ensured scalability and reliability with tools like kafka, redis, docker, clickhouse, and postgresql</li>
-                <li>shipped ui for chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid) and optimised webapp frontend (<span className="text-foreground">$114m</span> volume managed, <span className="text-foreground">$100k</span> arr)</li>
+                <li>delivered user-facing product features, including the chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid), and a platform managing <span className="text-foreground">$114m</span> in volume</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
@@ -92,7 +92,6 @@ export default function Page() {
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>co-built the fastify backend (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
                 <li>contributed to writing integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
-                <li>shipped a public-facing bridge explorer for transaction tracking</li>
                 <li>created fuelbae, an ai agent executing defi actions across aave, uniswap, hyperliquid, and curve</li>
               </ul>
             </div>
