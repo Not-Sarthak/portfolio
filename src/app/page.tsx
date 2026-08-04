@@ -80,10 +80,10 @@ export default function Page() {
               <p><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">[june 2025 – present]</span> <span className="text-gray-400">— founding engineer</span></p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>researched, designed and implemented protocols across defi verticals like amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, perps, and launchpads</li>
-                <li>engineered <span className="text-foreground">3ms</span> data pipelines — <span className="text-foreground">parsing</span> (manual, codama, carbon), <span className="text-foreground">indexing</span> (yellowstone grpc), and <span className="text-foreground">historical backfilling</span> (jetstreamer firehose)</li>
+                <li>engineered efficient data pipelines — <span className="text-foreground">parsing</span> (manual, codama, carbon), <span className="text-foreground">indexing</span> (yellowstone grpc), and <span className="text-foreground">historical backfilling</span> (jetstreamer firehose)</li>
                 <li>built backend microservices in axum (rust) and typescript</li>
                 <li>owned deployments, ci/cd, nginx reverse proxy for backend microservices, and the entire monitoring, observability and aws infrastructure (ec2, elasticache, rds, and s3)</li>
-                <li>ensured scalability and reliability with kafka, redis, docker, clickhouse, and postgresql — achieving <span className="text-foreground">~95%</span> stable uptime while handling <span className="text-foreground">multiple GBs</span> of data per day</li>
+                <li>ensured scalability and reliability with tools like kafka, redis, docker, clickhouse, and postgresql</li>
                 <li>shipped ui for chrome extension (<span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid) and optimised webapp frontend (<span className="text-foreground">$114m</span> volume managed, <span className="text-foreground">$100k</span> arr)</li>
               </ul>
             </div>
