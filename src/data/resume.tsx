@@ -348,6 +348,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
     { name: "ethindia (base)", place: "top 5", date: "dec 2024", type: "hackathon" },
     { name: "onchain ai fellowship by fbi", place: "fellow", date: "dec 2024", type: "fellowship" },
     { name: "superteam india", place: "member", date: "—", type: "fellowship" },
+    { name: "network school v2", place: "member", date: "—", type: "fellowship" },
     { name: "superteam security dashboard", place: "1st place", date: "apr 2025", type: "hackathon" },
     { name: "colosseum breakout hackathon — side track (light protocol)", place: "1st place", date: "may 2025", type: "hackathon" },
   ],
