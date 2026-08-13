@@ -77,7 +77,11 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <div className="py-2 text-sm">
-              <p><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">[june 2025 – present]</span> <span className="text-gray-400">— founding engineer</span></p>
+              <div className="flex justify-between gap-4">
+                <p className="min-w-0"><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">— founding engineer</span></p>
+                <span className="text-gray-400 shrink-0">june 2025 – present</span>
+              </div>
+              <p className="text-gray-400">(backed by colosseum, balaji srinivasan &amp; monke foundry)</p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>researched, designed and implemented protocols across amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, perps, and launchpads</li>
                 <li>owned the trading terminal (<span className="text-foreground">$114m</span> in volume) end to end: <span className="text-foreground">parsing</span> (manual, codama, carbon), <span className="text-foreground">indexing</span> (yellowstone grpc), <span className="text-foreground">backfills</span> (jetstreamer firehose), backend (axum), transport (kafka), storage (clickhouse, postgres), and infra + deployments + observability (aws, ci/cd)</li>
@@ -85,7 +89,10 @@ export default function Page() {
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">[jan 2025 – may 2025]</span> <span className="text-gray-400">— software developer</span></p>
+              <div className="flex justify-between gap-4">
+                <p className="min-w-0"><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">— software developer</span></p>
+                <span className="text-gray-400 shrink-0">jan 2025 – may 2025</span>
+              </div>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>co-built the fastify backend (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
                 <li>contributed integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
@@ -93,7 +100,10 @@ export default function Page() {
               </ul>
             </div>
             <div className="py-2 text-sm">
-              <p><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="font-medium">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">[mar 2024 – dec 2024]</span> <span className="text-gray-400">— software developer</span></p>
+              <div className="flex justify-between gap-4">
+                <p className="min-w-0"><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="text-gray-400">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">— software developer</span></p>
+                <span className="text-gray-400 shrink-0">mar 2024 – dec 2024</span>
+              </div>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
                 <li>one of the first <span className="text-foreground">10</span> builders on <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">AO</a> in its earliest days</li>
                 <li>contributed to the lua contracts behind 0rbit's oracle, the <span className="text-foreground">first protocol live on AO</span>, bringing price feeds, data feeds and any api onto arweave's actor-oriented compute layer</li>

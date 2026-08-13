@@ -140,34 +140,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       description:
         "load testing tool for benchmarking solana nodes over rpc and grpc",
     },
-    Curators: {
-      id: 2,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/curators",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
-    },
-    Pintel: {
-      id: 4,
-      language: "/languages/solidity.svg",
-      description:
-        "precision prediction market using gaussian probability distribution",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/pintel",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-    },
     "Pinocchio Squads v4": {
-      id: 12,
+      id: 2,
       language: "/languages/rust.svg",
       description: "squads v4 multisig rewritten in pinocchio",
       links: [
@@ -177,6 +151,32 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
           icon: <GithubIcon className="size-9" />,
         },
       ],
+    },
+    "Nock": {
+      id: 3,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/nock",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "per-maker on-chain order book exchange (clob) on solana",
+    },
+    "Resolut": {
+      id: 4,
+      language: "/languages/rust.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/resolut",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "an optimistic oracle (oo) that can record any verifiable truth or data onto solana",
     },
     "Anchor Turbin3": {
       id: 5,
@@ -190,20 +190,21 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
     },
-    "Cyfrin EVM": {
+    Curators: {
       id: 6,
-      language: "/languages/solidity.svg",
-      description: "lil projects i built while watching cyfrin's solidity course",
+      language: "/languages/typescript.svg",
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/cyfrin-evm",
+          href: "https://github.com/Not-Sarthak/curators",
           icon: <GithubIcon className="size-9" />,
         },
       ],
+      description:
+        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
     },
     Predictify: {
-      id: 8,
+      id: 7,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -215,26 +216,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       description:
         "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
     },
-    Hunch: {
-      id: 9,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Website",
-          href: "https://www.hunchkaro.xyz/",
-          icon: <LinkIcon className="size-9" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/hunch-lens",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "social trading platform for creating and trading onchain markets on viral content.",
-    },
     Ticker: {
-      id: 10,
+      id: 8,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -250,26 +233,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
     },
-    "Solana Security Dashboard": {
-      id: 7,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Website",
-          href: "https://st-security.vercel.app/",
-          icon: <LinkIcon className="size-9" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/st-security",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "track hacks, exploits, and vulnerabilities in the solana ecosystem.",
-    },
     "SIMD.live": {
-      id: 13,
+      id: 9,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -280,57 +245,92 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description: "a readable index of every solana improvement document",
     },
-    "Ticket Booking CLI": {
-      id: 11,
-      language: "/languages/go.svg",
+    "Cyfrin EVM": {
+      id: 10,
+      language: "/languages/solidity.svg",
+      description: "lil projects i built while watching cyfrin's solidity course",
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/booking-app-cli",
+          href: "https://github.com/Not-Sarthak/cyfrin-evm",
           icon: <GithubIcon className="size-9" />,
         },
       ],
-      description: "a simple cli ticket booking app in golang",
     },
-    "Oracle Aggregator": {
-      id: 14,
-      language: "/languages/rust.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/oracle-aggregator",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "solana oracle over pyth, switchboard, dex amms, twap & price transforms",
-    },
-    "Nock": {
-      id: 15,
-      language: "/languages/rust.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/nock",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "per-maker on-chain order book exchange (clob) on solana",
-    },
-    "Resolut": {
-      id: 16,
-      language: "/languages/rust.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/resolut",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "an optimistic oracle (oo) that can record any verifiable truth or data onto solana",
-    },
+    // Pintel: {
+    //   id: 11,
+    //   language: "/languages/solidity.svg",
+    //   description:
+    //     "precision prediction market using gaussian probability distribution",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/pintel",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    // },
+    // Hunch: {
+    //   id: 12,
+    //   language: "/languages/typescript.svg",
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://www.hunchkaro.xyz/",
+    //       icon: <LinkIcon className="size-9" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/hunch-lens",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    //   description:
+    //     "social trading platform for creating and trading onchain markets on viral content.",
+    // },
+    // "Solana Security Dashboard": {
+    //   id: 13,
+    //   language: "/languages/typescript.svg",
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://st-security.vercel.app/",
+    //       icon: <LinkIcon className="size-9" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/st-security",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    //   description:
+    //     "track hacks, exploits, and vulnerabilities in the solana ecosystem.",
+    // },
+    // "Ticket Booking CLI": {
+    //   id: 14,
+    //   language: "/languages/go.svg",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/booking-app-cli",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    //   description: "a simple cli ticket booking app in golang",
+    // },
+    // "Oracle Aggregator": {
+    //   id: 15,
+    //   language: "/languages/rust.svg",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/oracle-aggregator",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    //   description:
+    //     "solana oracle over pyth, switchboard, dex amms, twap & price transforms",
+    // },
   },
   highlightedWins: [
     { name: "arweave hacker house #1", place: "2nd place", date: "nov 2023", type: "hackathon" },
