@@ -233,8 +233,21 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
     },
-    "SIMD.live": {
+    CloseCode: {
       id: 9,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/closecode",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "a terminal coding agent aggregator to experiment with different models locally",
+    },
+    "SIMD.live": {
+      id: 10,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -246,7 +259,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       description: "a readable index of every solana improvement document",
     },
     "Cyfrin EVM": {
-      id: 10,
+      id: 11,
       language: "/languages/solidity.svg",
       description: "lil projects i built while watching cyfrin's solidity course",
       links: [
@@ -258,7 +271,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
     },
     // Pintel: {
-    //   id: 11,
+    //   id: 12,
     //   language: "/languages/solidity.svg",
     //   description:
     //     "precision prediction market using gaussian probability distribution",
