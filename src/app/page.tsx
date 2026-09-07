@@ -94,7 +94,7 @@ export default function Page() {
                 <span className="text-gray-400 shrink-0">jan 2025 – may 2025</span>
               </div>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
-                <li>co-built the fastify backend (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
+                <li>co-built the backend (docker, postgresql), handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
                 <li>contributed integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
                 <li>created fuelbae, an ai agent executing defi actions across aave, uniswap, hyperliquid, and curve</li>
               </ul>

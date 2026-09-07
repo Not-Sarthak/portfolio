@@ -1,119 +1,10 @@
-import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, TrophyIcon } from "lucide-react";
 import { GithubIcon } from "../../public/icons/github";
 import { LinkIcon } from "../../public/icons/link";
 
 export const DATA = {
   name: "Sarthak Shah",
-  initials: "SS",
   url: "https://www.0xsarthak.xyz/",
   description: "I Code.",
-  summary: `
-I'm a full-stack developer with an experience of working with various languages and blockchains.
-
-Previously, I've interned at 3x early-stage startups and have won 20x hackathons🏆. I enjoy contributing to open source projects. I'm also a member at SuperteamIn (@superteamIn) & FBI (@callusfbi).
-
-Beyond code, I'm passionate about cinematography and am stepping out of my comfort zone to create both technical and non-technical content. I'm a sneakerhead, love traveling, and enjoy endless talks on finance. Also, I play chess.
-`,
-  avatarUrl: "/me.jpg",
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
-  contact: {
-    email: "notsarthakshah@gmail.com",
-    social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/Not-Sarthak/",
-        icon: Icons.github,
-
-        navbar: true,
-      },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/notsarthakshah/",
-        icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/0xSarthak13",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      resume: {
-        name: "Download Resume",
-        url: "/resume.pdf",
-        icon: Icons.work,
-        navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-        navbar: false,
-      },
-    },
-  },
-  work: [
-    {
-      company: "MetEngine",
-      href: "",
-      location: "Remote",
-      title: "Founding Engineer",
-      logoUrl: "/work/metengine.svg",
-      start: "June 2025",
-      end: "Present",
-      description: "",
-    },
-    {
-      company: "Gasyard",
-      href: "https://gasyard.fi/",
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/work/gasyard.png",
-      start: "January 2025",
-      end: "May 2025",
-      description:
-        "Built backend with Fastify, Docker, and PostgreSQL that handled $570K in transaction volume and processed 120K requests. Implemented cross-chain bridge routes for Hyperliquid, Movement, Monad (Testnet), and other EVM/Non-EVM integrations in Testnet and Mainnet environments. Created Gasyard Bridge Explorer using Next.js, TypeScript, Tanstack Query, Zustand, and Tailwind CSS for transaction tracking. Developed Fuelbae Agent tool for executing DeFi actions across protocols.",
-    },
-    {
-      company: "0rbit",
-      href: "https://www.0rbit.co/",
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/work/0rbit.jpg",
-      start: "March 2024",
-      end: "December 2024",
-      description:
-        "Developed multiple smart contracts in Lua for the AO Ecosystem, while battle-testing 0rbit's core infrastructure and contributing to the core node. I also integrated frontend tutorials using AOConnect, showcasing 0rbit's capabilities in blog posts. Beyond code, I enhanced the documentation, converted Figma designs into functional UI components, and contributed to the website development. Additionally, I handled social media content and authored blogs and technical documentation, ensuring a better developer experience.",
-    },
-    {
-      company: "Pyano (now Bytebell AI)",
-      href: "",
-      location: "Remote",
-      title: "Software Developer Intern (Part-Time)",
-      logoUrl: "/work/bytebell.png",
-      start: "May 2024",
-      end: "June 2024",
-      description:
-        "Developed a complete desktop application using Electron.js, integrating multiple LLM API endpoints into the frontend. Successfully deployed the stable release through Amazon S3 and GitHub Releases, ensuring seamless access for users.",
-    },
-    {
-      company: "D2Clytics",
-      href: "",
-      location: "Remote",
-      title: "Frontend Developer Intern",
-      logoUrl: "/work/d2clytics.jpg",
-      start: "January 2024",
-      end: "April 2024",
-      description:
-        "Developed over 35 charts using various libraries with React.js and TailwindCSS. I led the end-to-end state management process and converted more than 30 pages Figma design into functional code.",
-    },
-  ],
-  openSource: [],
   projects: {
     "gossip-toy": {
       id: 0,
@@ -190,21 +81,8 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
     },
-    Curators: {
-      id: 6,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/curators",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
-    },
     Predictify: {
-      id: 7,
+      id: 6,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -217,7 +95,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
     },
     Ticker: {
-      id: 8,
+      id: 7,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -234,7 +112,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
     },
     CloseCode: {
-      id: 9,
+      id: 8,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -245,6 +123,19 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description:
         "a terminal coding agent aggregator to experiment with different models locally",
+    },
+    Curators: {
+      id: 9,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/curators",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
     },
     "SIMD.live": {
       id: 10,
