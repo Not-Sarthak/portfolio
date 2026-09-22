@@ -81,8 +81,21 @@ export const DATA = {
         },
       ],
     },
-    Predictify: {
+    "Solver Engine": {
       id: 6,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/solver-engine",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "intent-based cross-chain swap solver that fills from its own inventory on 7 chains and settles against the deposit. 0.87 ms quotes, 7.3k quotes per second at p99 10 ms, uniswap v2 and v3 math exact to the wei against quoterv2",
+    },
+    Predictify: {
+      id: 7,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -95,7 +108,7 @@ export const DATA = {
         "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
     },
     Ticker: {
-      id: 7,
+      id: 8,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -112,7 +125,7 @@ export const DATA = {
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
     },
     CloseCode: {
-      id: 8,
+      id: 9,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -125,7 +138,7 @@ export const DATA = {
         "a terminal coding agent aggregator to experiment with different models locally",
     },
     Curators: {
-      id: 9,
+      id: 10,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -138,7 +151,7 @@ export const DATA = {
         "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
     },
     "SIMD.live": {
-      id: 10,
+      id: 11,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -150,7 +163,7 @@ export const DATA = {
       description: "a readable index of every solana improvement document",
     },
     "Cyfrin EVM": {
-      id: 11,
+      id: 12,
       language: "/languages/solidity.svg",
       description: "lil projects i built while watching cyfrin's solidity course",
       links: [
