@@ -25,10 +25,10 @@ export default function Page() {
               <h1 className="font-bold">Sarthak Shah</h1>
               <p className="text-gray-400 text-sm">backend / smart contract engineer</p>
               <p className="mt-4 text-sm">
-                I'm a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
+                I was most recently a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
               </p>
               <p className="mt-4 text-sm">
-                I love working with financial systems, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra as weekend gigs.
+                I love working with financial systems, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra.
               </p>
               <p className="mt-4 text-sm">
                 I enjoy participating in hackathons and have won ~20 of them. Also, in my free time, I obsess over cameras, drones, and bikes.
@@ -37,7 +37,8 @@ export default function Page() {
                 Links: {" "}
                 <a href="https://www.linkedin.com/in/notsarthakshah/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
                 <a href="https://x.com/0xSarthak13" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Twitter]</a>{" "}
-                <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>
+                <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>{" "}
+                <a href="/sarthak-resume.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Resume]</a>
               </p>
             </div>
             <img src="/me.jpg" alt="Sarthak Shah" className="w-28 h-28 rounded object-cover shrink-0" />
@@ -51,35 +52,19 @@ export default function Page() {
           </div>
         </BlurFade>
       </section>
-      <section id="projects">
-        <div className="space-y-2 w-full py-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div>
-              <h2 className="text-gray-500 text-sm">Projects</h2>
-              <hr className="border-gray-200 opacity-50 mt-1" />
-            </div>
-          </BlurFade>
-
-          <BlurFade delay={BLUR_FADE_DELAY * 12}>
-            <div className="">
-              <ProjectList projects={projects} />
-            </div>
-          </BlurFade>
-        </div>
-      </section>
       <section id="work">
         <div className="space-y-2 w-full py-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div>
               <h2 className="text-gray-500 text-sm">Work</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <div className="py-2 text-sm">
               <div className="flex justify-between gap-4">
                 <p className="min-w-0"><a href="https://x.com/met_engine" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a> <span className="text-gray-400">— founding engineer</span></p>
-                <span className="text-gray-400 shrink-0">june 2025 – present</span>
+                <span className="text-gray-400 shrink-0">june 2025 – sept 2026</span>
               </div>
               <p className="text-gray-400">(backed by colosseum, balaji srinivasan &amp; monke foundry)</p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
@@ -119,6 +104,22 @@ export default function Page() {
       </section>
 
 
+      <section id="projects">
+        <div className="space-y-2 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div>
+              <h2 className="text-gray-500 text-sm">Projects</h2>
+              <hr className="border-gray-200 opacity-50 mt-1" />
+            </div>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="">
+              <ProjectList projects={projects} />
+            </div>
+          </BlurFade>
+        </div>
+      </section>
       <section id="open-source">
         <div className="space-y-2 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 14.5}>

@@ -4,7 +4,7 @@ import { LinkIcon } from "../../public/icons/link";
 export const DATA = {
   name: "Sarthak Shah",
   url: "https://www.0xsarthak.xyz/",
-  description: "I Code.",
+  description: "backend / smart contract engineer",
   projects: {
     "gossip-toy": {
       id: 0,
