@@ -51,16 +51,11 @@ export default async function Image() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 32, color: "#6b7280", lineHeight: 1.45 }}>
-            financial systems, game theory and mechanism design — backend
-            systems, smart contracts and low-latency distributed infra.
-          </div>
           <div
             style={{
               display: "flex",
               height: 1,
               background: "#e5e7eb",
-              marginTop: 40,
               marginBottom: 28,
             }}
           />
