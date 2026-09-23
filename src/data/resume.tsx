@@ -3,7 +3,7 @@ import { LinkIcon } from "../../public/icons/link";
 
 export const DATA = {
   name: "Sarthak Shah",
-  url: "https://www.0xsarthak.xyz/",
+  url: "https://www.notsarthak.xyz/",
   description: "backend / smart contract engineer",
   projects: {
     "gossip-toy": {
