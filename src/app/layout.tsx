@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     siteName: `${DATA.name}`,
     locale: "en_US",
     type: "website",
-    images: [{ url: "/me.jpg" }],
   },
   robots: {
     index: true,
@@ -42,7 +41,6 @@ export const metadata: Metadata = {
     title: `${DATA.name}`,
     description: DATA.description,
     card: "summary_large_image",
-    images: ["/me.jpg"],
   },
   icons: {
     icon: "/me.jpg",
