@@ -1,119 +1,10 @@
-import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, TrophyIcon } from "lucide-react";
 import { GithubIcon } from "../../public/icons/github";
 import { LinkIcon } from "../../public/icons/link";
 
 export const DATA = {
   name: "Sarthak Shah",
-  initials: "SS",
-  url: "https://www.0xsarthak.xyz/",
-  description: "I Code.",
-  summary: `
-I'm a full-stack developer with an experience of working with various languages and blockchains.
-
-Previously, I've interned at 3x early-stage startups and have won 20x hackathons🏆. I enjoy contributing to open source projects. I'm also a member at SuperteamIn (@superteamIn) & FBI (@callusfbi).
-
-Beyond code, I'm passionate about cinematography and am stepping out of my comfort zone to create both technical and non-technical content. I'm a sneakerhead, love traveling, and enjoy endless talks on finance. Also, I play chess.
-`,
-  avatarUrl: "/me.jpg",
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
-  contact: {
-    email: "notsarthakshah@gmail.com",
-    social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/Not-Sarthak/",
-        icon: Icons.github,
-
-        navbar: true,
-      },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/notsarthakshah/",
-        icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/0xSarthak13",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      resume: {
-        name: "Download Resume",
-        url: "/resume.pdf",
-        icon: Icons.work,
-        navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-        navbar: false,
-      },
-    },
-  },
-  work: [
-    {
-      company: "MetEngine",
-      href: "",
-      location: "Remote",
-      title: "Founding Engineer",
-      logoUrl: "/work/metengine.svg",
-      start: "June 2025",
-      end: "Present",
-      description: "",
-    },
-    {
-      company: "Gasyard",
-      href: "https://gasyard.fi/",
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/work/gasyard.png",
-      start: "January 2025",
-      end: "May 2025",
-      description:
-        "Built backend with Fastify, Docker, and PostgreSQL that handled $570K in transaction volume and processed 120K requests. Implemented cross-chain bridge routes for Hyperliquid, Movement, Monad (Testnet), and other EVM/Non-EVM integrations in Testnet and Mainnet environments. Created Gasyard Bridge Explorer using Next.js, TypeScript, Tanstack Query, Zustand, and Tailwind CSS for transaction tracking. Developed Fuelbae Agent tool for executing DeFi actions across protocols.",
-    },
-    {
-      company: "0rbit",
-      href: "https://www.0rbit.co/",
-      location: "Remote",
-      title: "Full Stack Developer",
-      logoUrl: "/work/0rbit.jpg",
-      start: "March 2024",
-      end: "December 2024",
-      description:
-        "Developed multiple smart contracts in Lua for the AO Ecosystem, while battle-testing 0rbit's core infrastructure and contributing to the core node. I also integrated frontend tutorials using AOConnect, showcasing 0rbit's capabilities in blog posts. Beyond code, I enhanced the documentation, converted Figma designs into functional UI components, and contributed to the website development. Additionally, I handled social media content and authored blogs and technical documentation, ensuring a better developer experience.",
-    },
-    {
-      company: "Pyano (now Bytebell AI)",
-      href: "",
-      location: "Remote",
-      title: "Software Developer Intern (Part-Time)",
-      logoUrl: "/work/bytebell.png",
-      start: "May 2024",
-      end: "June 2024",
-      description:
-        "Developed a complete desktop application using Electron.js, integrating multiple LLM API endpoints into the frontend. Successfully deployed the stable release through Amazon S3 and GitHub Releases, ensuring seamless access for users.",
-    },
-    {
-      company: "D2Clytics",
-      href: "",
-      location: "Remote",
-      title: "Frontend Developer Intern",
-      logoUrl: "/work/d2clytics.jpg",
-      start: "January 2024",
-      end: "April 2024",
-      description:
-        "Developed over 35 charts using various libraries with React.js and TailwindCSS. I led the end-to-end state management process and converted more than 30 pages Figma design into functional code.",
-    },
-  ],
-  openSource: [],
+  url: "https://www.notsarthak.xyz/",
+  description: "backend / smart contract engineer",
   projects: {
     "gossip-toy": {
       id: 0,
@@ -126,6 +17,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
       description: "reimplementing toy version of solana's gossip protocol from scratch",
+      details: [
+        <>built a complete peer-to-peer gossip network in <b>rust</b> over udp, implementing solana's pull/push protocol, crds replication, liveness detection (ping/pong), and binary message serialization</>,
+        <>implemented <b>bloom filter–based anti-entropy synchronization</b> and timestamp-based conflict resolution, enabling efficient state reconciliation while minimizing redundant network traffic</>,
+        "designed a multi-threaded peer-to-peer system where nodes converge to a consistent replicated state using crds, bloom filter anti-entropy synchronization, and udp-based pull/push gossip",
+      ],
     },
     Aqua: {
       id: 1,
@@ -139,6 +35,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description:
         "load testing tool for benchmarking solana nodes over rpc and grpc",
+      details: [
+        <>built a <b>rust</b> load generator on tokio that drives solana json-rpc nodes at fixed request rates with semaphore-bounded concurrency, recording throughput, error rate and <b>p50/p90/p95/p99 latency</b> in an <b>hdr histogram</b>, across <b>40+ rpc methods</b> with stress, spike and soak modes</>,
+        <>implemented <b>geyser grpc benchmarking</b> that subscribes to two yellowstone endpoints concurrently and measures <b>per-slot delivery latency</b> between them, with account subscription filtering</>,
+        <>added <b>differential testing</b> that issues the same calls to multiple nodes and reports response mismatches, plus json and interactive html reports for every run</>,
+      ],
     },
     "Pinocchio Squads v4": {
       id: 2,
@@ -150,6 +51,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
           href: "https://github.com/Not-Sarthak/pinocchio-squads-v4",
           icon: <GithubIcon className="size-9" />,
         },
+      ],
+      details: [
+        <>rewrote the <b>squads v4 multisig</b> (the multisig behind most solana treasuries) in native pinocchio with all <b>35 instructions</b> and <b>10 account types</b>, covering threshold voting, time locks, spending limits, batch transactions and rent reclamation</>,
+        <>implemented <b>arbitrary cpi execution through vault pdas</b> with invoke_signed, resolving up to <b>8 address lookup tables</b> and <b>64 account keys</b> per message, plus a transaction buffer path for messages larger than one instruction</>,
+        <>structured it as an on-chain program plus a shared interface crate of layouts, seeds and errors, so clients compile against the same state definitions as the program</>,
       ],
     },
     "Nock": {
@@ -164,6 +70,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description:
         "per-maker on-chain order book exchange (clob) on solana",
+      details: [
+        <>architected a <b>per-maker order book</b> on solana where each market maker owns an independent pda, eliminating write contention and enabling concurrent quote updates under sealevel's parallel execution model</>,
+        <>implemented an <b>on-chain quote freshness mechanism</b> that automatically expires stale quotes using slot-based liveness checks without requiring external keepers</>,
+        <>built a <b>native pinocchio-based solana program</b> with deterministic fixed-size account layouts and optimized binary size for low compute overhead</>,
+      ],
     },
     "Resolut": {
       id: 4,
@@ -177,6 +88,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description:
         "an optimistic oracle (oo) that can record any verifiable truth or data onto solana",
+      details: [
+        <>built a <b>native pinocchio (no_std) solana program</b> with <b>39 instructions</b> across assertion, dispute, staking, voting, policy and emergency paths, with deterministic account layouts and pda seeds</>,
+        <>implemented the <b>optimistic assertion flow</b>: a claim posted with a bond settles as true after a <b>slot-based liveness window</b> unless disputed; a dispute escrows a matching bond and escalates to the court</>,
+        <>implemented a <b>staked dispute court with sha-256 commit-reveal voting</b>, per-voter stake, reputation and reward pdas, and slashing of the losing side on resolution</>,
+      ],
     },
     "Anchor Turbin3": {
       id: 5,
@@ -190,18 +106,22 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
     },
-    Curators: {
+    "Solver Engine": {
       id: 6,
       language: "/languages/typescript.svg",
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/curators",
+          href: "https://github.com/Not-Sarthak/solver-engine",
           icon: <GithubIcon className="size-9" />,
         },
       ],
-      description:
-        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
+      description: "intent-based cross-chain swap solver",
+      details: [
+        <>fill-then-settle solver in <b>typescript</b> over real uniswap v2 and v3 pools on <b>7 chains</b>: create2-derived pool addresses, pool state replayed from swap/mint/burn/sync logs, gas measured from receipts on anvil forks, signed fills</>,
+        <>uniswap v2 and v3 swap math <b>exact to the wei against quoterv2</b>; quote path at <b>0.87 ms</b> and <b>7.3k quotes/s at p99 10 ms</b> on one process</>,
+        <>order lifecycle as an <b>idempotent state machine</b> with refunds, payout retries, stray-deposit sweeping, restart recovery from chain logs, and a <b>redis writer lease with fencing tokens</b> against double-signing</>,
+      ],
     },
     Predictify: {
       id: 7,
@@ -215,6 +135,11 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
       description:
         "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
+      details: [
+        <>built a <b>typescript</b> telegram bot (telegraf, webhook mode) for trading polymarket from chat: fok market orders, gtc limit orders, cancels, redemptions and allowance management through the <b>polymarket clob client</b>, with <b>2.5k+ users and $100k+ volume</b></>,
+        <>ran two <b>polymarket websocket watchers</b> with auto-reconnect and redis-backed registrations for price alerts and limit-order fills, a <b>12-hourly cron notifier</b> for high-probability markets by subscribed category, and every order published to <b>aws sqs</b> for downstream processing</>,
+        <>integrated <b>mayan and debridge</b> so users fund from solana into polygon usdc in one flow, rendered pnl and position cards server-side with satori, shipped en/zh localisation, and deployed as a docker image to <b>ec2 through github actions</b> with staging and production pipelines</>,
+      ],
     },
     Ticker: {
       id: 8,
@@ -232,9 +157,50 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
         },
       ],
       description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
+      details: [
+        <>built a <b>next.js 15 farcaster mini app</b> where users buy and sell <b>20 tokenized rwas</b> (tsla, nvda, aapl, msft, xgold and others) with any token on any chain, doing <b>$10k+ in volume</b></>,
+        <>routed every trade through <b>bungee's cross-chain aggregator</b>: quotes fetched on debounced input, executed as an erc20 approval plus an <b>eip-712 signed order</b> on the returned route, across base, polygon and gnosis</>,
+        <>wired farcaster's frame sdk and manifest for in-feed launch, <b>privy with wagmi/viem</b> for wallets, and zustand stores for token, quote and bridge state</>,
+      ],
+    },
+    CloseCode: {
+      id: 9,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/closecode",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "a terminal coding agent aggregator to experiment with different models locally",
+      details: [
+        <>built a terminal coding agent in <b>typescript on bun</b> with an <b>opentui</b> interface and a <b>hono</b> api streaming anthropic and openai models through the ai sdk. a model is one shared catalogue entry (id, provider, pricing) that drives validation, the picker, provider resolution and billing; a new provider is one compiler-enforced switch case</>,
+        <>designed a <b>split agent loop</b>: the server owns the model, prompt, tool contracts and session transcript; the cli executes every tool call locally and posts results back, so source code never leaves the machine. <b>plan and build modes</b> are enforced on both sides</>,
+        <>added <b>clerk oauth with pkce</b>, session transcripts in postgres, and <b>usage-metered billing</b> with token usage priced into credits, ingested into <b>polar</b> and gated by a balance check</>,
+      ],
+    },
+    Curators: {
+      id: 10,
+      language: "/languages/typescript.svg",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/curators",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
+      details: [
+        <><b>fastify + typescript</b> backend with <b>prisma on postgresql</b> that ranks every <b>sanctum</b> lst by apy and, on each sol deposit, auto-swaps into the top lst through <b>jupiter v6</b></>,
+        <>designed <b>mev-protected execution</b>: the jupiter swap is decompiled, a treasury fee instruction appended, then sent as a <b>jito bundle</b> when the next leader is within <b>10 slots</b>, tipping at the <b>75th-percentile landed tip</b> across <b>5 block engines</b>; otherwise falls back to a plain rpc send with a fresh blockhash</>,
+        <>wallet-based <b>jwt auth</b> with per-user authorization on all <b>16 endpoints</b>, and portfolio accounting with <b>weighted-average entry price</b> and realized/unrealized profit in sol</>,
+      ],
     },
     "SIMD.live": {
-      id: 9,
+      id: 11,
       language: "/languages/typescript.svg",
       links: [
         {
@@ -246,7 +212,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       description: "a readable index of every solana improvement document",
     },
     "Cyfrin EVM": {
-      id: 10,
+      id: 12,
       language: "/languages/solidity.svg",
       description: "lil projects i built while watching cyfrin's solidity course",
       links: [
@@ -258,7 +224,7 @@ Beyond code, I'm passionate about cinematography and am stepping out of my comfo
       ],
     },
     // Pintel: {
-    //   id: 11,
+    //   id: 12,
     //   language: "/languages/solidity.svg",
     //   description:
     //     "precision prediction market using gaussian probability distribution",

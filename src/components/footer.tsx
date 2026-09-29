@@ -30,7 +30,7 @@ export const Footer = () => {
   return (
     <footer className="mt-12">
       <p className="text-sm text-gray-400 pb-4">
-        Feel free to reach out: notsarthakshah [at] gmail [dot] com
+        Feel free to reach out: notsarthakshah@gmail.com
       </p>
       <hr className="border-gray-200" />
       <p className="text-sm text-gray-400 py-4">

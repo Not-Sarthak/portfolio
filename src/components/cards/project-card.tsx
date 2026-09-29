@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -13,12 +15,14 @@ export interface Project {
   language?: string;
   links: readonly ProjectLink[];
   description: string;
+  details?: readonly React.ReactNode[];
 }
 
 interface ProjectCardProps {
   title: string;
   links: readonly ProjectLink[];
   description?: string;
+  details?: readonly React.ReactNode[];
   language?: string;
   className?: string;
 }
@@ -27,28 +31,107 @@ interface ProjectListProps {
   projects: Record<string, Project>;
 }
 
+const ChevronIcon = ({ open }: { open: boolean }) => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="shrink-0 text-gray-400 transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
+    style={{ transform: open ? "rotate(90deg)" : "rotate(0deg)" }}
+  >
+    <polyline points="9 18 15 12 9 6" />
+  </svg>
+);
+
+const linkClass =
+  "underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200";
+
 export function ProjectCard({
   title,
   links,
   description,
-  language,
+  details,
   className,
 }: ProjectCardProps) {
+  const [open, setOpen] = useState(false);
+  const expandable = !!details && details.length > 0;
+
+  if (!expandable) {
+    return (
+      <div className={cn("py-0.5 flex items-start gap-1.5", className)}>
+        <span className="w-[14px] shrink-0" aria-hidden="true" />
+        <p className="text-sm">
+          <Link
+            href={(links.find((l) => l.type === "Source") || links[0]).href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("font-medium", linkClass)}
+          >
+            {title.toLowerCase()}
+          </Link>
+          {description && (
+            <span className="text-gray-500"> — {description}</span>
+          )}
+        </p>
+      </div>
+    );
+  }
+
   return (
-    <div className={cn("py-0.5 group", className)}>
-      <p className="text-sm">
-        <Link
-          href={(links.find(l => l.type === "Source") || links[0]).href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200"
+    <div className={className}>
+      <div className="flex items-start gap-1.5 py-0.5 text-sm">
+        <button
+          onClick={() => setOpen(!open)}
+          aria-expanded={open}
+          aria-label={open ? "collapse" : "expand"}
+          className="flex h-5 items-center"
         >
-          {title.toLowerCase()}
-        </Link>
-        {description && (
-          <span className="text-gray-500"> — {description}</span>
-        )}
-      </p>
+          <ChevronIcon open={open} />
+        </button>
+        <p>
+          <Link
+            href={(links.find((l) => l.type === "Source") || links[0]).href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("font-medium", linkClass)}
+          >
+            {title.toLowerCase()}
+          </Link>
+          {description && (
+            <>
+              {" "}
+              <button
+                onClick={() => setOpen(!open)}
+                className="text-gray-500 text-left"
+              >
+                — {description}
+              </button>
+            </>
+          )}
+        </p>
+      </div>
+      <div
+        className="grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
+        style={{
+          gridTemplateRows: open ? "1fr" : "0fr",
+          opacity: open ? 1 : 0,
+        }}
+      >
+        <div className="overflow-hidden">
+          <ul className="ml-5 list-disc pl-4 pb-1 text-sm text-gray-500 [&_b]:font-medium [&_b]:text-foreground">
+            {details.map((d, i) => (
+              <li key={i} className="py-0.5">
+                {d}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
@@ -84,6 +167,7 @@ export function ProjectList({ projects }: ProjectListProps) {
                 title={title}
                 links={project.links}
                 description={project.description}
+                details={project.details}
                 className=""
               />
             ))}
@@ -92,4 +176,4 @@ export function ProjectList({ projects }: ProjectListProps) {
       ))}
     </div>
   );
-} 
+}

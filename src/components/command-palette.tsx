@@ -7,11 +7,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { createPortal } from "react-dom";
 import {
-  Book,
+  FileTextIcon,
+  FlaskConicalIcon,
   Link2Icon,
   Linkedin,
   MailIcon,
-  TrophyIcon,
   TwitterIcon,
   X,
 } from "lucide-react";
@@ -59,6 +59,9 @@ export function CommandPalette() {
         } else if (e.key === "e" || e.key === "E") {
           e.preventDefault();
           handleSendEmail();
+        } else if (e.key === "r" || e.key === "R") {
+          e.preventDefault();
+          window.open("/sarthak-resume.pdf", "_blank");
         } else if (e.key === "s" || e.key === "S") {
           e.preventDefault();
           window.open("https://github.com/Not-Sarthak/portfolio", "_blank");
@@ -76,6 +79,9 @@ export function CommandPalette() {
             if (e2.key === "h" || e2.key === "H") {
               e2.preventDefault();
               window.location.href = "/";
+            } else if (e2.key === "l" || e2.key === "L") {
+              e2.preventDefault();
+              window.location.href = "/lab";
             }
             document.removeEventListener("keydown", handleSecondKey);
           };
@@ -148,6 +154,12 @@ export function CommandPalette() {
         href: "https://www.linkedin.com/in/notsarthakshah/",
       },
       {
+        icon: <FileTextIcon />,
+        label: "Resume",
+        shortcut: "R",
+        href: "/sarthak-resume.pdf",
+      },
+      {
         icon: (
           <svg
             width="24"
@@ -194,6 +206,12 @@ export function CommandPalette() {
         label: "Home",
         shortcut: "G H",
         href: "/",
+      },
+      {
+        icon: <FlaskConicalIcon />,
+        label: "Lab",
+        shortcut: "G L",
+        href: "/lab",
       },
     ],
   };
