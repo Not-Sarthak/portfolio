@@ -9,7 +9,7 @@ export const contentType = "image/png";
 export default async function Image() {
   const [font, avatar] = await Promise.all([
     readFile(join(process.cwd(), "public/fonts/cooper.ttf")),
-    readFile(join(process.cwd(), "public/me.jpg")),
+    readFile(join(process.cwd(), "public/me2.jpg")),
   ]);
 
   return new ImageResponse(

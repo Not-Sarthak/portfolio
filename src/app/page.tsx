@@ -7,7 +7,7 @@ import { ProjectList } from "@/components/cards/project-card";
 import { Footer } from "@/components/footer";
 import { CommandPalette } from "@/components/command-palette";
 import { allBlogPosts } from "@/data/blog";
-import VideoPlayer from "@/components/ui/video";
+// import VideoPlayer from "@/components/ui/video";
 import { OpenSourceList } from "@/components/open-source";
 import type { Project } from "@/components/cards/project-card";
 
@@ -41,7 +41,7 @@ export default function Page() {
                 <a href="/sarthak-resume.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Resume]</a>
               </p>
             </div>
-            <img src="/me.jpg" alt="Sarthak Shah" className="w-28 h-28 rounded object-cover shrink-0" />
+            <img src="/me2.jpg" alt="Sarthak Shah" className="w-28 h-28 rounded object-cover shrink-0" />
           </div>
         </div>
       </section>
@@ -231,11 +231,11 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="video" className="py-6">
+      {/* <section id="video" className="py-6">
         <BlurFade delay={BLUR_FADE_DELAY * 17}>
           <VideoPlayer src="/sarthak-pfp.mp4" />
         </BlurFade>
-      </section>
+      </section> */}
 
       <section id="footer" className="pt-20">
         <Footer />
