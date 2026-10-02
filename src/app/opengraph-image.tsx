@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Sarthak Shah — backend / smart contract engineer";
+export const alt = "Sarthak Shah — backend / distributed systems engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,7 +37,7 @@ export default async function Image() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 92, lineHeight: 1.1 }}>Sarthak Shah</div>
             <div style={{ fontSize: 38, color: "#9ca3af", marginTop: 16 }}>
-              backend / smart contract engineer
+              backend / distributed systems engineer
             </div>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}

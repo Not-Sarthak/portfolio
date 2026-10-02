@@ -23,7 +23,7 @@ export default function Page() {
           <div className="flex gap-6 items-start">
             <div className="flex-1">
               <h1 className="font-bold">Sarthak Shah</h1>
-              <p className="text-gray-400 text-sm">backend / smart contract engineer</p>
+              <p className="text-gray-400 text-sm">backend / distributed systems engineer</p>
               <p className="mt-4 text-sm">
                 I was most recently a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
               </p>
