@@ -59,6 +59,7 @@ const orgs: Org[] = [
     name: "zcashlabs/thus-spoke-zakura",
     prs: [
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/108", title: "fix(cli): only report ready after start" },
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/107", title: "fix(web): refresh explorer detail pages on new blocks" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/104", title: "feat(server): use a fixed development mnemonic" },
     ],
   },
