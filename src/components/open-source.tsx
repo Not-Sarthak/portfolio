@@ -58,6 +58,10 @@ const orgs: Org[] = [
   {
     name: "zcashlabs/thus-spoke-zakura",
     prs: [
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/277", title: "fix(cli): wait for environments that are still starting" },
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/276", title: "fix(cli): give each environment one lifecycle owner" },
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/211", title: "feat(server): expose durable payment status" },
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/160", title: "fix(wallet): run blocking wallet operations through with_db" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/108", title: "fix(cli): only report ready after start" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/107", title: "fix(web): refresh explorer detail pages on new blocks" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/104", title: "feat(server): use a fixed development mnemonic" },
