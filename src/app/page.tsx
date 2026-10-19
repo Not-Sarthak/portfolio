@@ -31,7 +31,7 @@ export default function Page() {
                 I love working with financial systems, game theory and mechanism design. You'll find me building elaborate backend systems, smart contracts, and low-latency distributed infra.
               </p>
               <p className="mt-4 text-sm">
-                I enjoy participating in hackathons and have won ~20 of them. Also, in my free time, I obsess over cameras, drones, and bikes.
+                I enjoy participating in hackathons and have won <Link href="/wins" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">~20</Link> of them. Also, in my free time, I obsess over cameras, drones, and bikes.
               </p>
               <p className="mt-4 text-sm">
                 Links: {" "}
@@ -164,40 +164,14 @@ export default function Page() {
 
       <section id="wins">
         <div className="space-y-2 w-full py-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
+          {/* <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
             <div>
               <h2 className="text-gray-500 text-sm">Highlighted Wins</h2>
               <hr className="border-gray-200 opacity-50 mt-1" />
             </div>
-          </BlurFade>
+          </BlurFade> */}
           <BlurFade delay={BLUR_FADE_DELAY * 16.6}>
             <div className="flex flex-col gap-4 mt-2">
-              {(["hackathon", "fellowship", "other"] as const).map((type) => {
-                const items = DATA.highlightedWins.filter((w) => (w.type as string) === type);
-                if (items.length === 0) return null;
-                const label = type === "hackathon" ? "hackathons" : type === "fellowship" ? "fellowships & honors" : "misc";
-                return (
-                  <div key={type}>
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs text-foreground font-bold uppercase tracking-widest">{label}</span>
-                      <div className="flex-1 h-px bg-gray-300" />
-                    </div>
-                    <div>
-                      {items.map((win) => (
-                        <div key={win.name} className="py-0.5 text-sm">
-                          <div className="flex justify-between gap-4">
-                            <span className="min-w-0">
-                              <span className="inline-block w-20">{win.place}</span>
-                              {win.name}
-                            </span>
-                            <span className="text-gray-400 shrink-0">{win.date}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xs text-foreground font-bold uppercase tracking-widest">sidequests & fun</span>

@@ -81,10 +81,10 @@ const orgs: Org[] = [
     ],
   },
   {
-    name: "prisma/prisma",
+    name: "prisma/orm",
     prs: [
-      { href: "https://github.com/prisma/prisma/pull/29287", title: "feat(adapter-pg): accept connection string URL in PrismaPg constructor" },
-      { href: "https://github.com/prisma/prisma/pull/29286", title: "fix(client): fix browser-imported Prisma.DbNull producing empty object" },
+      { href: "https://github.com/prisma/orm/pull/29287", title: "feat(adapter-pg): accept connection string URL in PrismaPg constructor" },
+      { href: "https://github.com/prisma/orm/pull/29286", title: "fix(client): fix browser-imported Prisma.DbNull producing empty object" },
     ],
   },
 ];
