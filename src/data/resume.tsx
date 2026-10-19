@@ -94,18 +94,18 @@ export const DATA = {
         <>implemented a <b>staked dispute court with sha-256 commit-reveal voting</b>, per-voter stake, reputation and reward pdas, and slashing of the losing side on resolution</>,
       ],
     },
-    "Anchor Turbin3": {
-      id: 5,
-      language: "/languages/rust.svg",
-      description: "minimal solana programs built during turbin3 builders' cohort",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/anchor-turbin3",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-    },
+    // "Anchor Turbin3": {
+    //   id: 5,
+    //   language: "/languages/rust.svg",
+    //   description: "minimal solana programs built during turbin3 builders' cohort",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/anchor-turbin3",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    // },
     "Solver Engine": {
       id: 6,
       language: "/languages/typescript.svg",
@@ -211,18 +211,18 @@ export const DATA = {
       ],
       description: "a readable index of every solana improvement document",
     },
-    "Cyfrin EVM": {
-      id: 12,
-      language: "/languages/solidity.svg",
-      description: "lil projects i built while watching cyfrin's solidity course",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/cyfrin-evm",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-    },
+    // "Cyfrin EVM": {
+    //   id: 12,
+    //   language: "/languages/solidity.svg",
+    //   description: "lil projects i built while watching cyfrin's solidity course",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/cyfrin-evm",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    // },
     // Pintel: {
     //   id: 12,
     //   language: "/languages/solidity.svg",
