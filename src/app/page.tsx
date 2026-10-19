@@ -25,16 +25,19 @@ export default function Page() {
               <h1 className="font-bold">Sarthak Shah</h1>
               <p className="text-gray-400 text-sm">backend / distributed systems engineer</p>
               <p className="mt-4 text-sm">
-                I was most recently a Founding Engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
+                i&apos;m a rust/typescript engineer.
               </p>
               <p className="mt-4 text-sm">
-                I build backend systems, low-latency distributed infra, defi and mechanism design.
+                systems and backend is what i specialize in. blockchain (especially defi) is my main niche, ai being the secondary one.
+              </p>
+              <p className="mt-4 text-sm">
+                i was most recently a founding engineer at <a href="https://www.metengine.xyz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">MetEngine</a>{" "}<img src="/work/metengine.svg" alt="" className="inline-block w-4 h-4 align-middle -translate-y-px" />.
               </p>
               {/* <p className="mt-4 text-sm">
                 I enjoy participating in hackathons and have won <Link href="/wins" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">~20</Link> of them. Also, in my free time, I obsess over cameras, drones, and bikes.
               </p> */}
               <p className="mt-4 text-sm">
-                Links: {" "}
+                links: {" "}
                 <a href="https://www.linkedin.com/in/notsarthakshah/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
                 <a href="https://x.com/0xSarthak13" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Twitter]</a>{" "}
                 <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>{" "}
