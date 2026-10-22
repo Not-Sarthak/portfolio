@@ -41,7 +41,7 @@ export default function Page() {
                 <a href="https://www.linkedin.com/in/notsarthakshah/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[LinkedIn]</a>{" "}
                 <a href="https://x.com/0xSarthak13" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Twitter]</a>{" "}
                 <a href="https://github.com/Not-Sarthak/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[GitHub]</a>{" "}
-                <a href="/sarthak-resume.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Resume]</a>
+                <a href="https://docs.google.com/document/d/1Ul0gZj7XOaAxmzpNx_jr5djOBOBt-lyT6kCnBKO_uBg/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">[Resume]</a>
               </p>
             </div>
             <img src="/me2.jpg" alt="Sarthak Shah" className="w-28 h-28 rounded object-cover shrink-0" />

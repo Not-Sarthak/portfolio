@@ -61,7 +61,7 @@ export function CommandPalette() {
           handleSendEmail();
         } else if (e.key === "r" || e.key === "R") {
           e.preventDefault();
-          window.open("/sarthak-resume.pdf", "_blank");
+          window.open("https://docs.google.com/document/d/1Ul0gZj7XOaAxmzpNx_jr5djOBOBt-lyT6kCnBKO_uBg/edit?usp=sharing", "_blank");
         } else if (e.key === "s" || e.key === "S") {
           e.preventDefault();
           window.open("https://github.com/Not-Sarthak/portfolio", "_blank");
@@ -157,7 +157,7 @@ export function CommandPalette() {
         icon: <FileTextIcon />,
         label: "Resume",
         shortcut: "R",
-        href: "/sarthak-resume.pdf",
+        href: "https://docs.google.com/document/d/1Ul0gZj7XOaAxmzpNx_jr5djOBOBt-lyT6kCnBKO_uBg/edit?usp=sharing",
       },
       {
         icon: (
