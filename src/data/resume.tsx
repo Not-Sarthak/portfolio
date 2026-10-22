@@ -6,61 +6,45 @@ export const DATA = {
   url: "https://www.notsarthak.xyz/",
   description: "backend / distributed systems engineer",
   projects: {
-    "gossip-toy": {
+    Predictify: {
       id: 0,
-      language: "/languages/rust.svg",
+      tech: [{ name: "TypeScript", icon: "/tech/typescript.svg" }, { name: "Bun", icon: "/tech/bun.svg" }, { name: "Telegram Bot API", icon: "/tech/telegram.svg" }, { name: "Mayan", icon: "/tech/mayan.png" }, { name: "deBridge", icon: "/tech/debridge.png" }, { name: "Supabase", icon: "/tech/supabase.svg" }, { name: "Redis", icon: "/tech/redis.svg" }, { name: "AWS SQS", icon: "/tech/amazonsqs.svg" }, { name: "AWS EC2", icon: "/tech/amazonec2.svg" }, { name: "Cloudflare", icon: "/tech/cloudflare.svg" }, { name: "Docker", icon: "/tech/docker.svg" }, { name: "GitHub Actions", icon: "/tech/githubactions.svg" }],
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/gossip-rs",
+          href: "https://github.com/Not-Sarthak/predictify",
           icon: <GithubIcon className="size-9" />,
         },
       ],
-      description: "reimplementing toy version of solana's gossip protocol from scratch",
+      description: "all-in-one trading toolkit for polymarket — 2.5k users, $100k volume",
       details: [
-        <>built a complete peer-to-peer gossip network in <b>rust</b> over udp, implementing solana's pull/push protocol, crds replication, liveness detection (ping/pong), and binary message serialization</>,
-        <>implemented <b>bloom filter–based anti-entropy synchronization</b> and timestamp-based conflict resolution, enabling efficient state reconciliation while minimizing redundant network traffic</>,
-        "designed a multi-threaded peer-to-peer system where nodes converge to a consistent replicated state using crds, bloom filter anti-entropy synchronization, and udp-based pull/push gossip",
+        <>built a typescript telegram bot (telegraf, webhook mode) for trading polymarket from chat: fok market orders, gtc limit orders, cancels, redemptions, allowance management, copy trading and referrals</>,
+        <>made order execution <b>idempotent on stateless webhook handlers</b> by queuing every order through <b>aws sqs</b> and running each one single-flight</>,
+        <>built a <b>chain-abstraction layer</b> with mayan and debridge, funding polymarket&apos;s native collateral from other chains in one flow</>,
+        <>ran polymarket websocket watchers with auto-reconnect and redis-backed subscriptions for live fill tracking</>,
       ],
     },
-    Aqua: {
+    "Solver Engine": {
       id: 1,
-      language: "/languages/rust.svg",
+      tech: [{ name: "TypeScript", icon: "/tech/typescript.svg" }, { name: "Bun", icon: "/tech/bun.svg" }, { name: "Fastify", icon: "/tech/fastify.svg" }, { name: "Redis", icon: "/tech/redis.svg" }, { name: "PostgreSQL", icon: "/tech/postgresql.svg" }, { name: "Prisma", icon: "/tech/prisma.svg" }, { name: "Prometheus", icon: "/tech/prometheus.svg" }, { name: "AWS KMS", icon: "/tech/amazonwebservices.svg" }, { name: "Solidity", icon: "/tech/solidity.svg" }, { name: "Foundry", icon: "/tech/foundry.png" }, { name: "Circle CCTP", icon: "/tech/circle.svg" }, { name: "Across", icon: "/tech/across.png" }, { name: "Uniswap", icon: "/tech/uniswap.png" }, { name: "Docker", icon: "/tech/docker.svg" }],
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/aqua",
+          href: "https://github.com/Not-Sarthak/solver-engine",
           icon: <GithubIcon className="size-9" />,
         },
       ],
-      description:
-        "load testing tool for benchmarking solana nodes over rpc and grpc",
+      description: "intent-based cross-chain swap solver",
       details: [
-        <>built a <b>rust</b> load generator on tokio that drives solana json-rpc nodes at fixed request rates with semaphore-bounded concurrency, recording throughput, error rate and <b>p50/p90/p95/p99 latency</b> in an <b>hdr histogram</b>, across <b>40+ rpc methods</b> with stress, spike and soak modes</>,
-        <>implemented <b>geyser grpc benchmarking</b> that subscribes to two yellowstone endpoints concurrently and measures <b>per-slot delivery latency</b> between them, with account subscription filtering</>,
-        <>added <b>differential testing</b> that issues the same calls to multiple nodes and reports response mismatches, plus json and interactive html reports for every run</>,
-      ],
-    },
-    "Pinocchio Squads v4": {
-      id: 2,
-      language: "/languages/rust.svg",
-      description: "squads v4 multisig rewritten in pinocchio",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/pinocchio-squads-v4",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      details: [
-        <>rewrote the <b>squads v4 multisig</b> (the multisig behind most solana treasuries) in native pinocchio with all <b>35 instructions</b> and <b>10 account types</b>, covering threshold voting, time locks, spending limits, batch transactions and rent reclamation</>,
-        <>implemented <b>arbitrary cpi execution through vault pdas</b> with invoke_signed, resolving up to <b>8 address lookup tables</b> and <b>64 account keys</b> per message, plus a transaction buffer path for messages larger than one instruction</>,
-        <>structured it as an on-chain program plus a shared interface crate of layouts, seeds and errors, so clients compile against the same state definitions as the program</>,
+        <>fill-then-settle solver in <b>typescript</b> over uniswap v2 and v3 pools on <b>6 evm chains</b>, with pools found by create2 and kept live by replaying swap, mint, burn and sync logs every block</>,
+        <>uniswap v3 swap math <b>exact to the wei against quoterv2</b>, with quotes at <b>p99 15 ms</b> and <b>5.5k quotes/s</b> on one process</>,
+        <>every transaction journaled and fsynced in redis before broadcast, so payouts stay <b>exactly-once</b> across crashes, reorgs and leader failover</>,
+        <>deposits escrowed in an audited contract and claimed once final, with inventory rebalanced across chains over <b>cctp</b> and <b>across</b></>,
       ],
     },
     "Nock": {
-      id: 3,
-      language: "/languages/rust.svg",
+      id: 2,
+      tech: [{ name: "Rust", icon: "/tech/rust.svg" }, { name: "Solana", icon: "/tech/solana.svg" }, { name: "Pinocchio", icon: "/tech/pinocchio.png" }],
       links: [
         {
           type: "Source",
@@ -71,14 +55,14 @@ export const DATA = {
       description:
         "per-maker on-chain order book exchange (clob) on solana",
       details: [
-        <>architected a <b>per-maker order book</b> on solana where each market maker owns an independent pda, eliminating write contention and enabling concurrent quote updates under sealevel's parallel execution model</>,
-        <>implemented an <b>on-chain quote freshness mechanism</b> that automatically expires stale quotes using slot-based liveness checks without requiring external keepers</>,
-        <>built a <b>native pinocchio-based solana program</b> with deterministic fixed-size account layouts and optimized binary size for low compute overhead</>,
+        <>built a sharded on-chain clob on solana in <b>pinocchio</b> with one pda order book per maker, eliminating write-lock contention so fills execute in parallel under sealevel</>,
+        <>packed each maker&apos;s full 16-level bid and ask ladders into a single <b>zero-copy 704-byte account</b> with quotes stored as tick offsets from the mid, so repricing the whole book is one <b>o(1) update</b> at under <b>2% of solana&apos;s per-instruction compute budget</b></>,
+        <>shielded makers from toxic flow by expiring quotes on a <b>slot-based ttl</b> and sequencing every update, so takers never hit a stale or out-of-order quote</>,
       ],
     },
     "Resolut": {
-      id: 4,
-      language: "/languages/rust.svg",
+      id: 3,
+      tech: [{ name: "Rust", icon: "/tech/rust.svg" }, { name: "Solana", icon: "/tech/solana.svg" }, { name: "Pinocchio", icon: "/tech/pinocchio.png" }],
       links: [
         {
           type: "Source",
@@ -89,83 +73,15 @@ export const DATA = {
       description:
         "an optimistic oracle (oo) that can record any verifiable truth or data onto solana",
       details: [
-        <>built a <b>native pinocchio (no_std) solana program</b> with <b>39 instructions</b> across assertion, dispute, staking, voting, policy and emergency paths, with deterministic account layouts and pda seeds</>,
-        <>implemented the <b>optimistic assertion flow</b>: a claim posted with a bond settles as true after a <b>slot-based liveness window</b> unless disputed; a dispute escrows a matching bond and escalates to the court</>,
-        <>implemented a <b>staked dispute court with sha-256 commit-reveal voting</b>, per-voter stake, reputation and reward pdas, and slashing of the losing side on resolution</>,
-      ],
-    },
-    // "Anchor Turbin3": {
-    //   id: 5,
-    //   language: "/languages/rust.svg",
-    //   description: "minimal solana programs built during turbin3 builders' cohort",
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/Not-Sarthak/anchor-turbin3",
-    //       icon: <GithubIcon className="size-9" />,
-    //     },
-    //   ],
-    // },
-    "Solver Engine": {
-      id: 6,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/solver-engine",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description: "intent-based cross-chain swap solver",
-      details: [
-        <>fill-then-settle solver in <b>typescript</b> over real uniswap v2 and v3 pools on <b>7 chains</b>: create2-derived pool addresses, pool state replayed from swap/mint/burn/sync logs, gas measured from receipts on anvil forks, signed fills</>,
-        <>uniswap v2 and v3 swap math <b>exact to the wei against quoterv2</b>; quote path at <b>0.87 ms</b> and <b>7.3k quotes/s at p99 10 ms</b> on one process</>,
-        <>order lifecycle as an <b>idempotent state machine</b> with refunds, payout retries, stray-deposit sweeping, restart recovery from chain logs, and a <b>redis writer lease with fencing tokens</b> against double-signing</>,
-      ],
-    },
-    Predictify: {
-      id: 7,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/predictify",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description:
-        "polymarket telegram bot — 2.5k+ users, $100k+ volume.",
-      details: [
-        <>built a <b>typescript</b> telegram bot (telegraf, webhook mode) for trading polymarket from chat: fok market orders, gtc limit orders, cancels, redemptions and allowance management through the <b>polymarket clob client</b>, with <b>2.5k+ users and $100k+ volume</b></>,
-        <>ran two <b>polymarket websocket watchers</b> with auto-reconnect and redis-backed registrations for price alerts and limit-order fills, a <b>12-hourly cron notifier</b> for high-probability markets by subscribed category, and every order published to <b>aws sqs</b> for downstream processing</>,
-        <>integrated <b>mayan and debridge</b> so users fund from solana into polygon usdc in one flow, rendered pnl and position cards server-side with satori, shipped en/zh localisation, and deployed as a docker image to <b>ec2 through github actions</b> with staging and production pipelines</>,
-      ],
-    },
-    Ticker: {
-      id: 8,
-      language: "/languages/typescript.svg",
-      links: [
-        {
-          type: "Website",
-          href: "https://farcaster.xyz/~/mini-apps/launch?domain=ticker.megabyte0x.xyz",
-          icon: <LinkIcon className="size-9" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Not-Sarthak/ticker",
-          icon: <GithubIcon className="size-9" />,
-        },
-      ],
-      description: "a farcaster mini-app to buy rwa assets onchain ($10k+ in volume)",
-      details: [
-        <>built a <b>next.js 15 farcaster mini app</b> where users buy and sell <b>20 tokenized rwas</b> (tsla, nvda, aapl, msft, xgold and others) with any token on any chain, doing <b>$10k+ in volume</b></>,
-        <>routed every trade through <b>bungee's cross-chain aggregator</b>: quotes fetched on debounced input, executed as an erc20 approval plus an <b>eip-712 signed order</b> on the returned route, across base, polygon and gnosis</>,
-        <>wired farcaster's frame sdk and manifest for in-feed launch, <b>privy with wagmi/viem</b> for wallets, and zustand stores for token, quote and bridge state</>,
+        <>built a native <b>pinocchio (no_std)</b> solana program with <b>46 instructions</b> across assertion, dispute, policy, staking, voting and settlement, with discriminated fixed-size accounts and on-chain derived ids</>,
+        <>claims post a bond and settle as true after a <b>slot-based liveness window</b> unless disputed, when an equal bond escalates them to the court or an escalation manager</>,
+        <>staked dispute court with <b>commit-reveal voting</b> bound to each voter, round and request, slashing wrong and silent voters within a per-round budget and paying correct ones</>,
+        <>settled assertions leave a <b>tombstone</b> so ids can never be reused, with every account closable to reclaim rent</>,
       ],
     },
     CloseCode: {
-      id: 9,
-      language: "/languages/typescript.svg",
+      id: 4,
+      tech: [{ name: "TypeScript", icon: "/tech/typescript.svg" }, { name: "Bun", icon: "/tech/bun.svg" }, { name: "React", icon: "/tech/react.svg" }, { name: "OpenTUI", icon: "/tech/opentui.svg" }, { name: "Hono", icon: "/tech/hono.svg" }, { name: "AI SDK", icon: "/tech/vercel.svg" }, { name: "Clerk", icon: "/tech/clerk.svg" }, { name: "PostgreSQL", icon: "/tech/postgresql.svg" }, { name: "Prisma", icon: "/tech/prisma.svg" }, { name: "Polar", icon: "/tech/polar.png" }, { name: "Sentry", icon: "/tech/sentry.svg" }],
       links: [
         {
           type: "Source",
@@ -181,27 +97,45 @@ export const DATA = {
         <>added <b>clerk oauth with pkce</b>, session transcripts in postgres, and <b>usage-metered billing</b> with token usage priced into credits, ingested into <b>polar</b> and gated by a balance check</>,
       ],
     },
-    Curators: {
-      id: 10,
-      language: "/languages/typescript.svg",
+    Aqua: {
+      id: 5,
+      tech: [{ name: "Rust", icon: "/tech/rust.svg" }, { name: "Tokio", icon: "/tech/tokio.svg" }, { name: "gRPC", icon: "/tech/triton.png" }],
       links: [
         {
           type: "Source",
-          href: "https://github.com/Not-Sarthak/curators",
+          href: "https://github.com/Not-Sarthak/aqua",
           icon: <GithubIcon className="size-9" />,
         },
       ],
       description:
-        "identifies high-performing LSTs on solana and auto-swaps to optimize yield.",
+        "load testing tool for benchmarking solana nodes over rpc and grpc",
       details: [
-        <><b>fastify + typescript</b> backend with <b>prisma on postgresql</b> that ranks every <b>sanctum</b> lst by apy and, on each sol deposit, auto-swaps into the top lst through <b>jupiter v6</b></>,
-        <>designed <b>mev-protected execution</b>: the jupiter swap is decompiled, a treasury fee instruction appended, then sent as a <b>jito bundle</b> when the next leader is within <b>10 slots</b>, tipping at the <b>75th-percentile landed tip</b> across <b>5 block engines</b>; otherwise falls back to a plain rpc send with a fresh blockhash</>,
-        <>wallet-based <b>jwt auth</b> with per-user authorization on all <b>16 endpoints</b>, and portfolio accounting with <b>weighted-average entry price</b> and realized/unrealized profit in sol</>,
+        <>built a <b>rust</b> load generator on <b>tokio</b> that drives solana json-rpc nodes at set request rates across <b>40+ rpc methods</b>, recording throughput, error rate and <b>p50/p90/p95/p99 latency</b> in hdr histograms</>,
+        <>benchmarks <b>yellowstone geyser grpc</b> endpoints head to head, measuring <b>per-slot delivery latency</b> between two providers</>,
+        <>runs stress, spike and soak modes and writes json and interactive html reports for every run</>,
+      ],
+    },
+    "gossip-toy": {
+      id: 6,
+      tech: [{ name: "Rust", icon: "/tech/rust.svg" }],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Not-Sarthak/gossip-rs",
+          icon: <GithubIcon className="size-9" />,
+        },
+      ],
+      description:
+        "solana's gossip protocol rebuilt from scratch with crds and bloom-filter sync",
+      details: [
+        <>built solana&apos;s gossip protocol in <b>rust</b> over udp, with push/pull gossip, <b>crds replication</b>, ping/pong liveness and binary serialization</>,
+        <>reconciles state through <b>bloom filter–based anti-entropy</b> and timestamp-based conflict resolution, so nodes converge without redundant traffic</>,
+        <>runs <b>multi-threaded peers</b> that converge to one consistent replicated state across the network</>,
       ],
     },
     "SIMD.live": {
-      id: 11,
-      language: "/languages/typescript.svg",
+      id: 7,
+      tech: [{ name: "Next.js", icon: "/tech/nextdotjs.svg" }, { name: "TypeScript", icon: "/tech/typescript.svg" }, { name: "GitHub Actions", icon: "/tech/githubactions.svg" }],
       links: [
         {
           type: "Website",
@@ -211,6 +145,18 @@ export const DATA = {
       ],
       description: "a readable index of every solana improvement document",
     },
+    // "Anchor Turbin3": {
+    //   id: 5,
+    //   language: "/languages/rust.svg",
+    //   description: "minimal solana programs built during turbin3 builders' cohort",
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/Not-Sarthak/anchor-turbin3",
+    //       icon: <GithubIcon className="size-9" />,
+    //     },
+    //   ],
+    // },
     // "Cyfrin EVM": {
     //   id: 12,
     //   language: "/languages/solidity.svg",

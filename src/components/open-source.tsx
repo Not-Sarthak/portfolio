@@ -58,6 +58,7 @@ const orgs: Org[] = [
   {
     name: "zcashlabs/thus-spoke-zakura",
     prs: [
+      { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/419", title: "fix(cli): recover after interrupted network and volume creates" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/277", title: "fix(cli): wait for environments that are still starting" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/276", title: "fix(cli): give each environment one lifecycle owner" },
       { href: "https://github.com/zcashlabs/thus-spoke-zakura/pull/211", title: "feat(server): expose durable payment status" },

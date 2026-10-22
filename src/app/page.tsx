@@ -71,32 +71,34 @@ export default function Page() {
               </div>
               <p className="text-gray-400">(backed by colosseum, balaji srinivasan &amp; monke foundry)</p>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
-                <li>researched, designed and implemented protocols across amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, perps, and launchpads</li>
-                <li>owned the trading terminal (<span className="text-foreground">$114m</span> in volume) end to end: <span className="text-foreground">parsing</span> (manual, codama, carbon), <span className="text-foreground">indexing</span> (yellowstone grpc), <span className="text-foreground">backfills</span> (jetstreamer firehose), backend (axum), transport (kafka), storage (clickhouse, postgres), and infra + deployments + observability (aws, ci/cd)</li>
-                <li>shipped the chrome extension: <span className="text-foreground">2.2k</span> users in 3 weeks, <span className="text-foreground">90</span> paid</li>
+                <li>researched, designed and implemented protocol mechanics across amms, liquidity providing, lending &amp; borrowing, yield-bearing vaults, perps, and launchpads</li>
+                <li>built the lp trading terminal (<span className="text-foreground">$114m in volume</span>)</li>
+                <li>shipped the chrome extension: <span className="text-foreground">2.2k users in 3 weeks</span></li>
+                <li>built the data pipeline that streams raw transactions over yellowstone grpc, backfills history with jetstreamer, and decodes both into readable data with codama and carbon</li>
+                <li>built a scalable storage system on clickhouse, postgres and redis that handled <span className="text-foreground">10m+ rows/day</span> while serving real-time queries to users</li>
+                <li>set up the aws infrastructure, ci/cd and observability that deploy, run and monitor every metengine service</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
               <div className="flex justify-between gap-4">
-                <p className="min-w-0"><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard</a> <span className="text-gray-400">— software developer</span></p>
-                <span className="text-gray-400 shrink-0">jan 2025 – may 2025</span>
+                <p className="min-w-0"><a href="https://x.com/gasyardfi" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">Gasyard Finance</a> <span className="text-gray-400">— software development engineer</span></p>
+                <span className="text-gray-400 shrink-0">dec 2024 – may 2025</span>
               </div>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
-                <li>co-built the backend, handling <span className="text-foreground">$570k</span> volume across <span className="text-foreground">120k</span> requests in 5 months</li>
-                <li>contributed integrations from scratch for hyperliquid, movement, monad, and other evm/non-evm chains, often pre-sdk on the newer ones</li>
-                <li>created fuelbae, an ai agent executing defi actions across aave, uniswap, hyperliquid, and curve</li>
+                <li>contributed to intent based cross-chain bridge routes (solana, evm and movevm) for evm/non-evm networks across testnet/mainnet environments</li>
+                <li>developed the fastify backend that did <span className="text-foreground">$550k</span> in volume and <span className="text-foreground">120k+ requests in 5 months</span> with sub-second quotes</li>
+                <li>built a high-performance bridge explorer for gasyard that indexes every transaction in real time</li>
               </ul>
             </div>
             <div className="py-2 text-sm">
               <div className="flex justify-between gap-4">
-                <p className="min-w-0"><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="text-gray-400">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">— software developer</span></p>
+                <p className="min-w-0"><a href="https://x.com/0rbitco" target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">0rbit</a> <span className="text-gray-400">(acq. by <a href="https://x.com/fwdresearch" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">forward research</a>)</span> <span className="text-gray-400">— software engineer</span></p>
                 <span className="text-gray-400 shrink-0">mar 2024 – dec 2024</span>
               </div>
               <ul className="text-gray-500 text-sm list-disc ml-4 mt-0.5">
-                <li>one of the first <span className="text-foreground">10</span> builders on <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">AO</a> in its earliest days</li>
-                <li>contributed to the lua contracts behind 0rbit's oracle, the <span className="text-foreground">first protocol live on AO</span>, bringing price feeds, data feeds and any api onto arweave's actor-oriented compute layer</li>
-                <li>tested the node pre-launch, surfacing edge cases and stability issues before mainnet</li>
-                <li>wrote <span className="text-foreground">4</span> developer blogs with working demo apps to onboard new builders</li>
+                <li>one of the first 10 builders on <a href="https://ao.arweave.net/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200">AO</a>, contributing during the ecosystem&apos;s earliest days. later on built and scaled the developer community from <span className="text-foreground">0 to 2,000+ members</span>, providing direct technical support to <span className="text-foreground">10+ integration partners</span></li>
+                <li>contributed to the lua smart contracts powering <span className="text-foreground">0rbit&apos;s oracle</span>, the first protocol deployed on AO, enabling price feeds, data feeds, and arbitrary api access on arweave&apos;s actor-oriented compute layer and wrote automated tests for the oracle contracts and stress-tested 0rbit nodes on testnet before mainnet</li>
+                <li>authored <span className="text-foreground">4 developer blogs</span>, comprehensive documentation, guides, and working demo applications that accelerated adoption of 0rbit and reduced developer support tickets by <span className="text-foreground">40%</span></li>
               </ul>
             </div>
             <div className="py-2 text-sm">

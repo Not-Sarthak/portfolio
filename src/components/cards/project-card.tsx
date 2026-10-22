@@ -12,7 +12,7 @@ interface ProjectLink {
 
 export interface Project {
   id: number;
-  language?: string;
+  tech?: readonly Tech[];
   links: readonly ProjectLink[];
   description: string;
   details?: readonly React.ReactNode[];
@@ -23,7 +23,7 @@ interface ProjectCardProps {
   links: readonly ProjectLink[];
   description?: string;
   details?: readonly React.ReactNode[];
-  language?: string;
+  tech?: readonly Tech[];
   className?: string;
 }
 
@@ -51,15 +51,44 @@ const ChevronIcon = ({ open }: { open: boolean }) => (
 const linkClass =
   "underline underline-offset-2 decoration-gray-300 hover:decoration-current transition-all duration-200";
 
+export interface Tech {
+  name: string;
+  icon: string;
+}
+
+function TechRow({ tech }: { tech: readonly Tech[] }) {
+  return (
+    <li className="py-0.5">
+      <span className="flex flex-wrap items-center gap-2">
+        <span>tech stack:</span>
+        {tech.map((t) => (
+          <span key={t.name} className="group/tech relative flex">
+            <img
+              src={t.icon}
+              alt={t.name}
+              className="w-4 h-4 shrink-0 text-gray-500"
+            />
+            <span className="pointer-events-none absolute bottom-full left-1/2 mb-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-foreground px-1.5 py-0.5 text-[11px] text-white opacity-0 transition-opacity duration-150 group-hover/tech:opacity-100">
+              {t.name}
+            </span>
+          </span>
+        ))}
+      </span>
+    </li>
+  );
+}
+
 export function ProjectCard({
   title,
   links,
   description,
   details,
+  tech,
   className,
 }: ProjectCardProps) {
   const [open, setOpen] = useState(false);
-  const expandable = !!details && details.length > 0;
+  const expandable = !!(details?.length || tech?.length);
+  const href = (links.find((l) => l.type === "Source") || links[0]).href;
 
   if (!expandable) {
     return (
@@ -67,7 +96,7 @@ export function ProjectCard({
         <span className="w-[14px] shrink-0" aria-hidden="true" />
         <p className="text-sm">
           <Link
-            href={(links.find((l) => l.type === "Source") || links[0]).href}
+            href={href}
             target="_blank"
             rel="noopener noreferrer"
             className={cn("font-medium", linkClass)}
@@ -95,7 +124,7 @@ export function ProjectCard({
         </button>
         <p>
           <Link
-            href={(links.find((l) => l.type === "Source") || links[0]).href}
+            href={href}
             target="_blank"
             rel="noopener noreferrer"
             className={cn("font-medium", linkClass)}
@@ -124,11 +153,12 @@ export function ProjectCard({
       >
         <div className="overflow-hidden">
           <ul className="ml-5 list-disc pl-4 pb-1 text-sm text-gray-500 [&_b]:font-medium [&_b]:text-foreground">
-            {details.map((d, i) => (
+            {details?.map((d, i) => (
               <li key={i} className="py-0.5">
                 {d}
               </li>
             ))}
+            {tech && tech.length > 0 && <TechRow tech={tech} />}
           </ul>
         </div>
       </div>
@@ -136,43 +166,18 @@ export function ProjectCard({
   );
 }
 
-const langName = (lang: string) =>
-  lang.split("/").pop()?.replace(/\.svg$/, "") ?? "other";
-
 export function ProjectList({ projects }: ProjectListProps) {
-  const grouped: Record<string, [string, Project][]> = {};
-  Object.entries(projects).forEach(([title, project]) => {
-    const lang = project.language || "other";
-    if (!grouped[lang]) grouped[lang] = [];
-    grouped[lang].push([title, project]);
-  });
-
   return (
-    <div className="flex flex-col gap-3">
-      {Object.entries(grouped).map(([lang, items]) => (
-        <div key={lang} className="flex gap-2">
-          <div className="flex flex-col items-center pt-1">
-            <span className="group/lang relative flex">
-              <img src={lang} alt={langName(lang)} className="w-4 h-4 shrink-0" />
-              <span className="pointer-events-none absolute bottom-full left-1/2 mb-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-foreground px-1.5 py-0.5 text-[11px] text-white opacity-0 transition-opacity duration-150 group-hover/lang:opacity-100">
-                {langName(lang)} projects
-              </span>
-            </span>
-            <div className="w-px flex-1 bg-gray-200 mt-1" />
-          </div>
-          <div className="flex-1">
-            {items.map(([title, project]) => (
-              <ProjectCard
-                key={title}
-                title={title}
-                links={project.links}
-                description={project.description}
-                details={project.details}
-                className=""
-              />
-            ))}
-          </div>
-        </div>
+    <div className="flex flex-col">
+      {Object.entries(projects).map(([title, project]) => (
+        <ProjectCard
+          key={title}
+          title={title}
+          links={project.links}
+          description={project.description}
+          details={project.details}
+          tech={project.tech}
+        />
       ))}
     </div>
   );
